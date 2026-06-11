@@ -115,7 +115,7 @@ h1 em, h2 em {
 }
 
 .hero-body {
-  max-width: 480px;
+  max-width: 790px;
   margin-left: auto;
 }
 .hero-body p { margin-bottom: 20px; }
@@ -266,7 +266,7 @@ h1 em, h2 em {
 }
 
 .outro-body {
-  max-width: 480px;
+  max-width: 790px;
   margin-left: auto;
 }
 .outro-body p { margin-bottom: 20px; }
