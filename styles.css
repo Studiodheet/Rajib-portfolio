@@ -5,12 +5,12 @@
    ============================================================ */
 
 :root {
-  --bg: #fbfaf7;          /* warm off-white page background */
-  --ink: #181614;         /* near-black text */
-  --muted: #6f6a63;       /* secondary text */
-  --accent: #bc4b26;      /* terracotta - links & italic accents */
-  --rule: #e7e2da;        /* hairlines & pill borders */
-  --pill-bg: #f1ede6;     /* tag pill background */
+  --bg: #ffffff;          /* pure white, matching Studio Dheet */
+  --ink: #000000;         /* pure black, matching Studio Dheet */
+  --muted: #6f6a63;       /* secondary text (rarely used) */
+  --accent: #a4fca7;      /* Studio Dheet mint green */
+  --rule: #ececec;        /* hairlines & pill borders */
+  --pill-bg: #f7f7f7;     /* tag pill background */
   --max: 720px;           /* content column width */
 }
 
@@ -37,8 +37,16 @@ body {
   padding: 0 24px;
 }
 
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; text-underline-offset: 3px; }
+a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+a:hover {
+  background: var(--accent);
+}
 a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
@@ -53,7 +61,7 @@ header {
 }
 
 .identity .name {
-  font-family: 'Noto Serif JP', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.375rem;
   letter-spacing: 0.01em;
   color: var(--ink);
@@ -74,13 +82,13 @@ nav {
   gap: 28px;
   font-size: 0.9375rem;
 }
-nav a { color: var(--ink); }
+nav a { color: var(--ink); text-decoration: none; }
 nav a[aria-current="page"] {
-  color: var(--accent);
-  border-bottom: 2px solid var(--accent);
+  color: var(--ink);
+  border-bottom: 2px solid var(--ink);
   padding-bottom: 2px;
 }
-nav a:hover { color: var(--accent); text-decoration: none; }
+nav a:hover { background: var(--accent); }
 
 /* ---------- Hero (stacked: full-width headline, body offset right) ---------- */
 
@@ -91,7 +99,7 @@ nav a:hover { color: var(--accent); text-decoration: none; }
 }
 
 h1 {
-  font-family: 'Noto Serif JP', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 300;
   font-size: 100px;
   line-height: 1.04;
@@ -140,18 +148,18 @@ h1 em, h2 em {
 .project-content { min-width: 0; }
 
 .project h2 {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 400;
   font-size: 48px;
-  line-height: 58px;
-  letter-spacing: -0.015em;
+  line-height: 56px;
+  letter-spacing: -0.005em;
   margin-bottom: 32px;
   color: var(--ink);
 }
 
-/* The opening project-defining sentence picks up the brand colour */
+/* All project headlines stay full black to match Studio Dheet's monochrome */
 .project h2 .lede {
-  color: var(--project-accent, var(--ink));
+  color: var(--ink);
 }
 
 .project p {
@@ -208,12 +216,12 @@ h1 em, h2 em {
   align-items: center;
   gap: 10px;
   margin: 12px 0 24px;
-  padding: 10px 16px;
-  border: 1px solid var(--rule);
+  padding: 10px 18px;
   border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 500;
-  background: #fff;
+  background: var(--accent);
+  color: var(--ink);
 }
 
 .tags {
@@ -232,14 +240,10 @@ h1 em, h2 em {
   color: var(--ink);
 }
 
-/* Per-project accent colours used by .lede */
-.project.nisba       { --project-accent: #1e3a8a; }
-.project.brightlocal { --project-accent: #5e8a1a; }
-.project.amex        { --project-accent: #006fcf; }
-.project.taylormade  { --project-accent: #c8102e; }
-.project.tfg         { --project-accent: #0b2545; }
-.project.iss         { --project-accent: #c2410c; }
-.project.skybet      { --project-accent: #0073e6; }
+/* Note: per-project brand accent colours have been removed in favour of
+   a single monochrome treatment matching Studio Dheet. To bring them back,
+   set --project-accent on each .project.xxx selector and revert the
+   .project h2 .lede colour to use var(--project-accent). */
 
 /* ---------- Footer CTA ---------- */
 
@@ -251,7 +255,7 @@ h1 em, h2 em {
 }
 
 .outro h2 {
-  font-family: 'Noto Serif JP', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 300;
   font-size: clamp(2.5rem, 8vw, 6rem);
   line-height: 1.04;
