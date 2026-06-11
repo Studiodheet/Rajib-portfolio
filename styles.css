@@ -140,11 +140,11 @@ h1 em, h2 em {
 .project-content { min-width: 0; }
 
 .project h2 {
-  font-family: 'Noto Serif JP', Georgia, serif;
-  font-weight: 300;
-  font-size: clamp(1.75rem, 3.2vw, 2.875rem);
-  line-height: 1.18;
-  letter-spacing: -0.01em;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: -0.015em;
   margin-bottom: 32px;
   color: var(--ink);
 }
@@ -155,8 +155,9 @@ h1 em, h2 em {
 }
 
 .project p {
-  max-width: 640px;
-  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
 
 /* ---------- Image carousel ----------
@@ -299,6 +300,14 @@ footer {
   }
   .project .logo {
     padding-top: 0;
+  }
+  .project h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .project p {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
