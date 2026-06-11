@@ -183,10 +183,24 @@ h1 em, h2 em {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 4px 48px;
+  padding: 4px 0;
   scrollbar-width: none;
 }
 .carousel::-webkit-scrollbar { display: none; }
+
+/* Leading spacer centres the first image in the viewport on initial load.
+   The 480px estimate is half the typical landscape image width at 680px tall;
+   on narrower screens, falls back to 48px so the image stays visible. */
+.carousel::before {
+  content: '';
+  flex-shrink: 0;
+  width: max(48px, calc(50vw - 480px));
+}
+.carousel::after {
+  content: '';
+  flex-shrink: 0;
+  width: 48px;
+}
 
 .carousel .slide {
   flex: 0 0 auto;
@@ -194,7 +208,7 @@ h1 em, h2 em {
   width: auto;
   max-width: 92vw;
   border-radius: 12px;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   border: 1px solid var(--rule);
   object-fit: cover;
 }
@@ -204,8 +218,11 @@ h1 em, h2 em {
 }
 
 @media (max-width: 800px) {
-  .carousel { padding: 4px 24px; }
-  .carousel .slide { height: 380px; }
+  .carousel::before { width: 24px; }
+  .carousel .slide {
+    height: 380px;
+    scroll-snap-align: start;
+  }
 }
 
 @media (max-width: 600px) {
