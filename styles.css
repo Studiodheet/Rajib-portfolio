@@ -93,16 +93,16 @@ nav a:hover { color: var(--accent); text-decoration: none; }
 h1 {
   font-family: 'Noto Serif JP', Georgia, serif;
   font-weight: 300;
-  font-size: clamp(2.75rem, 9vw, 7rem);
+  font-size: 100px;
   line-height: 1.04;
   letter-spacing: -0.02em;
   margin: 0 0 120px;
 }
 
 h1 em, h2 em {
-  font-style: italic;
+  font-style: normal;
   color: var(--ink);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .hero-body {
@@ -260,6 +260,7 @@ footer {
     padding: 72px 24px;
   }
   .hero h1, .outro h2 {
+    font-size: 48px;
     margin-bottom: 56px;
   }
   .hero-body, .outro-body {
