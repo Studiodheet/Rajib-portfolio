@@ -53,7 +53,7 @@ header {
 }
 
 .identity .name {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.375rem;
   letter-spacing: 0.01em;
   color: var(--ink);
@@ -82,37 +82,36 @@ nav a[aria-current="page"] {
 }
 nav a:hover { color: var(--accent); text-decoration: none; }
 
-/* ---------- Hero (two-column split: headline left, body right) ---------- */
+/* ---------- Hero (stacked: full-width headline, body offset right) ---------- */
 
 .hero {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 96px 48px 96px;
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 64px;
-  align-items: end;
+  padding: 120px 48px 96px;
 }
 
 h1 {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 400;
-  font-size: clamp(2.75rem, 8vw, 6rem);
-  line-height: 1.02;
-  letter-spacing: -0.015em;
-  margin: 0;
+  font-size: clamp(2.75rem, 9vw, 7rem);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin: 0 0 120px;
 }
 
 h1 em, h2 em {
   font-style: italic;
-  color: var(--accent);
+  color: var(--ink);
   font-weight: 400;
 }
 
-.hero-body { max-width: 460px; }
+.hero-body {
+  max-width: 480px;
+  margin-left: auto;
+}
 .hero-body p { margin-bottom: 20px; }
 .hero-body p:last-child { margin-bottom: 0; }
-.hero-body .email { font-weight: 500; }
+.hero-body .email { font-weight: 500; margin-top: 32px; }
 
 /* ---------- Project sections ---------- */
 
@@ -122,7 +121,7 @@ h1 em, h2 em {
 }
 
 .project .logo {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.5rem;
   margin-bottom: 28px;
 }
@@ -131,7 +130,7 @@ h1 em, h2 em {
 .project .logo img { display: block; height: 32px; width: auto; }
 
 .project h2 {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 400;
   font-size: clamp(1.625rem, 4vw, 2.125rem);
   line-height: 1.28;
@@ -222,24 +221,24 @@ h1 em, h2 em {
   margin: 0 auto;
   padding: 120px 48px 96px;
   border-top: 1px solid var(--rule);
-  display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 64px;
-  align-items: end;
 }
 
 .outro h2 {
-  font-family: 'DM Serif Display', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 400;
-  font-size: clamp(2.5rem, 7vw, 5rem);
-  line-height: 1.02;
-  letter-spacing: -0.015em;
-  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin: 0 0 120px;
 }
 
-.outro-body { max-width: 460px; }
+.outro-body {
+  max-width: 480px;
+  margin-left: auto;
+}
 .outro-body p { margin-bottom: 20px; }
 .outro-body p:last-child { margin-bottom: 0; }
+.outro-body .email { font-weight: 500; margin-top: 32px; }
 
 footer {
   padding: 0 0 48px;
@@ -258,10 +257,13 @@ footer {
 
 @media (max-width: 800px) {
   .hero, .outro {
-    grid-template-columns: 1fr;
-    gap: 32px;
     padding: 72px 24px;
-    align-items: start;
+  }
+  .hero h1, .outro h2 {
+    margin-bottom: 56px;
+  }
+  .hero-body, .outro-body {
+    margin-left: 0;
   }
 }
 
