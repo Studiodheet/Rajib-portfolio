@@ -167,30 +167,39 @@ h1 em, h2 em {
 .carousel {
   grid-column: 1 / -1;
   width: 100vw;
-  margin: 48px 0 0 calc(50% - 50vw);
+  margin: 64px 0 0 calc(50% - 50vw);
   display: flex;
   gap: 16px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 4px max(48px, calc((100vw - 1280px) / 2 + 48px));
+  padding: 4px 48px;
   scrollbar-width: none;
 }
 .carousel::-webkit-scrollbar { display: none; }
 
 .carousel .slide {
   flex: 0 0 auto;
-  height: 460px;
+  height: 680px;
   width: auto;
-  max-width: 85vw;
+  max-width: 92vw;
   border-radius: 12px;
   scroll-snap-align: start;
   border: 1px solid var(--rule);
   object-fit: cover;
 }
 
+@media (max-width: 1100px) {
+  .carousel .slide { height: 520px; }
+}
+
+@media (max-width: 800px) {
+  .carousel { padding: 4px 24px; }
+  .carousel .slide { height: 380px; }
+}
+
 @media (max-width: 600px) {
-  .carousel .slide { height: 260px; }
+  .carousel .slide { height: 280px; }
 }
 
 .milestone {
