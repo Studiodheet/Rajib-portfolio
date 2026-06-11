@@ -105,6 +105,7 @@ h1 {
   line-height: 1.04;
   letter-spacing: -0.02em;
   margin: 0 0 120px;
+  max-width: 820px;
 }
 
 h1 em, h2 em {
@@ -261,6 +262,7 @@ h1 em, h2 em {
   line-height: 1.04;
   letter-spacing: -0.02em;
   margin: 0 0 120px;
+  max-width: 820px;
 }
 
 .outro-body {
