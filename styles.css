@@ -183,7 +183,7 @@ h1 em, h2 em {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 4px 48px 4px max(48px, calc((100vw - 1280px) / 2 + 48px));
+  padding: 4px 48px;
   scrollbar-width: none;
 }
 .carousel::-webkit-scrollbar { display: none; }
