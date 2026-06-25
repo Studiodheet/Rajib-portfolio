@@ -498,3 +498,43 @@ footer {
 }
 .case-study-link::after { content: ' →'; }
 .case-study-link:hover { background: var(--accent); border-bottom-color: var(--accent); }
+
+/* Case study metadata strip */
+.case-meta {
+  max-width: 1280px;
+  margin: 0 auto 64px;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 32px;
+  border-top: 3px solid var(--accent);
+  padding-top: 32px;
+}
+.case-meta-item h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.case-meta-item p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .case-meta {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 24px;
+    padding-top: 24px;
+    gap: 28px;
+  }
+}
+@media (max-width: 480px) {
+  .case-meta {
+    grid-template-columns: 1fr;
+  }
+}
