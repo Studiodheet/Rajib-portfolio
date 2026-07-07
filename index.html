@@ -7,7 +7,7 @@
   <meta name="description" content="Product design and strategy for B2B SaaS teams. Product managers and designers specialising in AI-driven B2B SaaS.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
   <div class="announce">2 spaces left for August</div>
 
   <header class="nav">
-    <a href="index.html" class="nav-logo">studio dheet.</a>
+    <a href="index.html" class="nav-logo">studio dheet<span class="dot">.</span></a>
     <nav class="nav-links" id="navLinks">
       <a href="#about">About</a>
       <a href="#services">Services</a>
@@ -25,7 +25,7 @@
       <a href="#roles">Roles</a>
     </nav>
     <div class="nav-right">
-      <a href="#contact" class="pill">Book call</a>
+      <a href="#contact" class="pill">Book call <span class="star">&#10022;</span></a>
       <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span>
       </button>
@@ -33,69 +33,32 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section class="hero card card-white">
     <h1>Product design and strategy for B2B SaaS teams.</h1>
     <p class="hero-sub">Product managers &amp; designers specialising in AI-driven B2B SaaS.</p>
-    <a href="#contact" class="pill pill-lg">Let's chat</a>
+    <a href="#contact" class="pill pill-lg">Let's chat <span class="star">&#10142;</span></a>
+    <p class="hero-note"><span class="star-note">&#10022;</span> 2 spaces left for August</p>
   </section>
 
   <!-- ABOUT -->
-  <section class="about" id="about">
+  <section class="about card card-white" id="about">
+    <p class="eyebrow">About</p>
     <div class="about-grid">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2 class="display">Product design &amp; strategy for AI&#8209;driven B2B teams.</h2>
+      <div class="about-left">
+        <h2 class="display"><span class="dim">Product design &amp;<br>strategy for</span> AI&#8209;driven<br>B2B teams.</h2>
+        <p class="about-copy">We go deeper than most agencies. From wireframes to design systems, prototypes to high-fidelity UI, we work end-to-end, embedded in your team.</p>
+        <a href="#contact" class="pill">Book a call <span class="star">&#10022;</span></a>
       </div>
-      <div class="about-copy">
-        <p>We go deeper than most agencies. From wireframes to design systems, prototypes to high-fidelity UI, we work end-to-end, embedded in your team.</p>
-        <a href="#contact" class="pill">Book a call</a>
-      </div>
-    </div>
-    <div class="stats">
-      <div class="stat">
-        <span class="stat-num">16 Years+</span>
-        <span class="stat-label">building B2B products</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">$100m+</span>
-        <span class="stat-label">in funding &amp; acquisitions</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- APPROACH -->
-  <section class="approach">
-    <p class="eyebrow">Our approach</p>
-    <div class="approach-head">
-      <h2 class="display">Why dheet?</h2>
-      <p class="approach-intro">Work with a design partner that knows your stage. Not every B2B product needs the same thing. A pre-seed team needs to move fast and validate. A Series A product needs systems that scale. A Series C business needs clarity before it exits. After 16 years building B2B SaaS products through all of it, we match our approach to where you are, not the other way around.</p>
-    </div>
-    <div class="stage-cards">
-      <article class="stage-card">
-        <div class="stage-art">
-          <!-- Placeholder art: swap for your exported Wix SVG (see MIGRATION.md) -->
-          <svg viewBox="0 0 200 140" aria-hidden="true"><circle cx="100" cy="120" r="70" fill="#A4FCA7"/><circle cx="100" cy="120" r="44" fill="#F2FFE3"/><circle cx="100" cy="120" r="20" fill="#111"/></svg>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">16 Years+</span>
+          <span class="stat-label">building B2B products</span>
         </div>
-        <span class="stage-tag">Pre-seed to Seed</span>
-        <h3>Launch.</h3>
-        <p>You're turning an idea into a product users actually understand. We help you define the core use case, design the MVP, and get to traction fast, without overbuilding.</p>
-      </article>
-      <article class="stage-card">
-        <div class="stage-art">
-          <svg viewBox="0 0 200 140" aria-hidden="true"><rect x="30" y="80" width="36" height="60" rx="6" fill="#F2FFE3"/><rect x="82" y="50" width="36" height="90" rx="6" fill="#A4FCA7"/><rect x="134" y="20" width="36" height="120" rx="6" fill="#111"/></svg>
+        <div class="stat">
+          <span class="stat-num">$100m+</span>
+          <span class="stat-label">in funding &amp; acquisitions</span>
         </div>
-        <span class="stage-tag">Series A&nbsp;&ndash;&nbsp;B</span>
-        <h3>Grow.</h3>
-        <p>We untangle complex workflows, improve adoption, and design systems that scale as your product (and AI) gets more sophisticated.</p>
-      </article>
-      <article class="stage-card">
-        <div class="stage-art">
-          <svg viewBox="0 0 200 140" aria-hidden="true"><path d="M20 140 A80 80 0 0 1 180 140Z" fill="#A4FCA7"/><path d="M55 140 A45 45 0 0 1 145 140Z" fill="#111"/></svg>
-        </div>
-        <span class="stage-tag">Series C, IPO &amp; Sale</span>
-        <h3>Revitalise.</h3>
-        <p>We bring clarity back to the experience, align product and positioning, and prepare you for the next phase of growth.</p>
-      </article>
+      </div>
     </div>
   </section>
 
@@ -111,13 +74,43 @@
     </div>
   </section>
 
+  <!-- APPROACH -->
+  <section class="approach card card-white">
+    <p class="eyebrow">Our approach</p>
+    <div class="approach-head">
+      <h2 class="display">Why dheet?</h2>
+      <div class="approach-intro">
+        <p class="lead">Work with a design partner that knows your stage.</p>
+        <p>Not every B2B product needs the same thing. A pre-seed team needs to move fast and validate. A Series A product needs systems that scale. A Series C business needs clarity before it exits.</p>
+        <p>After 16 years building B2B SaaS products through all of it, we match our approach to where you are, not the other way around.</p>
+      </div>
+    </div>
+    <div class="stage-cards">
+      <article class="stage-card">
+        <h3>Launch.</h3>
+        <p class="stage-tag">Pre-seed to seed</p>
+        <p>You're turning an idea into a product users actually understand. We help you define the core use case, design the MVP, and get to traction fast, without overbuilding.</p>
+      </article>
+      <article class="stage-card">
+        <h3>Grow.</h3>
+        <p class="stage-tag">Series A&nbsp;&ndash;&nbsp;B</p>
+        <p>We untangle complex workflows, improve adoption, and design systems that scale as your product (and AI) gets more sophisticated.</p>
+      </article>
+      <article class="stage-card">
+        <h3>Revitalise.</h3>
+        <p class="stage-tag">Series C, IPO &amp; Sale</p>
+        <p>We bring clarity back to the experience, align product and positioning, and prepare you for the next phase of growth.</p>
+      </article>
+    </div>
+  </section>
+
   <!-- WORK / TESTIMONIALS -->
-  <section class="work">
+  <section class="work card card-white">
     <p class="eyebrow">Our work</p>
     <div class="work-head">
       <h2 class="display">Trusted by teams that ship.</h2>
       <p>Scale your product vision with a strategic design partner that builds robust, scalable user experiences, bridging the gap between MVP agility and Series B maturity.</p>
-      <a href="case-studies.html" class="pill">View case studies</a>
+      <a href="case-studies.html" class="pill">View case studies <span class="star">&#10142;</span></a>
     </div>
     <div class="quote-row">
       <figure class="quote-card">
@@ -137,24 +130,40 @@
         <figcaption>Model ML</figcaption>
       </figure>
     </div>
-    <p class="work-statement display">We work differently. We combine strong design with clear product thinking to help teams ship with confidence.</p>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement card card-pale">
+    <p class="statement-text">We work differently. We combine strong design with clear product thinking to help teams ship <span class="dim-olive">with confidence.</span></p>
   </section>
 
   <!-- PRICING -->
-  <section class="pricing" id="pricing">
+  <section class="pricing card card-white" id="pricing">
     <p class="eyebrow">Pricing</p>
     <div class="pricing-head">
-      <h2 class="display">Simple Pricing. No&nbsp;Guesswork. <span class="price-from">From $4k/mo</span></h2>
+      <h2 class="display">Simple Pricing.<br>No Guesswork.<br>From $4k/mo</h2>
       <p>Fully transparent and built for high-impact partnerships.</p>
-      <a href="#contact" class="pill">Book a call</a>
+      <a href="#contact" class="pill">Book a call <span class="star">&#10022;</span></a>
     </div>
 
     <div class="tabs" role="tablist" aria-label="Pricing plans">
-      <button class="tab active" role="tab" aria-selected="true" data-panel="panel-startups">Start-ups</button>
-      <button class="tab" role="tab" aria-selected="false" data-panel="panel-scaleups">Scaleups</button>
+      <button class="tab active" role="tab" aria-selected="true" data-panel="panel-scaleups">Scaleups</button>
+      <button class="tab" role="tab" aria-selected="false" data-panel="panel-startups">Start-ups</button>
     </div>
 
-    <div class="panel active" id="panel-startups" role="tabpanel">
+    <div class="panel active" id="panel-scaleups" role="tabpanel">
+      <p class="panel-intro">You've raised $50m+ and need senior product design support inside your product triads to keep your roadmap moving. You'll work with senior product designers who understand how fast-moving product organisations actually operate.</p>
+      <dl class="features">
+        <div><dt>Rituals</dt><dd>We integrate into your existing product rituals from stand-ups and design reviews to workshops and testing sessions.</dd></div>
+        <div><dt>Wireframes</dt><dd>We explore product direction through wireframes, combining your brief, user insights, and competitor analysis to surface clear options.</dd></div>
+        <div><dt>Collaboration</dt><dd>Regular working sessions, async feedback, and quick touchpoints to keep momentum without slowing your team down.</dd></div>
+        <div><dt>Design systems</dt><dd>Foundational systems that keep your product consistent now and prevent chaos as you scale later.</dd></div>
+        <div><dt>High-fidelity design</dt><dd>We translate validated flows into polished, dev-ready UI using scalable design system components.</dd></div>
+        <div><dt>Prototypes</dt><dd>Interactive prototypes that help you test ideas, align stakeholders, and validate decisions with users before committing to build.</dd></div>
+      </dl>
+    </div>
+
+    <div class="panel" id="panel-startups" role="tabpanel" hidden>
       <p class="panel-intro">You've raised $2&ndash;20m and need senior product support to move fast and get to product&ndash;market fit. You'll work with senior product designers and product strategists who embed directly into your team and ship alongside your engineers.</p>
       <dl class="features">
         <div><dt>Onboarding</dt><dd>We start with a structured onboarding to understand your product, users, market, and goals, so we're aligned from day one.</dd></div>
@@ -166,31 +175,21 @@
         <div><dt>Design systems</dt><dd>Foundational systems that keep your product consistent now and prevent chaos as you scale later.</dd></div>
       </dl>
     </div>
-
-    <div class="panel" id="panel-scaleups" role="tabpanel" hidden>
-      <p class="panel-intro">You've raised $50m+ and need senior product design support inside your product triads to keep your roadmap moving. You'll work with senior product designers who understand how fast-moving product organisations actually operate.</p>
-      <dl class="features">
-        <div><dt>Rituals</dt><dd>We integrate into your existing product rituals from stand-ups and design reviews to workshops and testing sessions.</dd></div>
-        <div><dt>Wireframes</dt><dd>We explore product direction through wireframes, combining your brief, user insights, and competitor analysis to surface clear options.</dd></div>
-        <div><dt>Collaboration</dt><dd>Regular working sessions, async feedback, and quick touchpoints to keep momentum without slowing your team down.</dd></div>
-        <div><dt>Design systems</dt><dd>Foundational systems that keep your product consistent now and prevent chaos as you scale later.</dd></div>
-        <div><dt>High-fidelity design</dt><dd>We translate validated flows into polished, dev-ready UI using scalable design system components.</dd></div>
-        <div><dt>Prototypes</dt><dd>Interactive prototypes that help you test ideas, align stakeholders, and validate decisions with users before committing to build.</dd></div>
-      </dl>
-    </div>
   </section>
 
   <!-- HIRING COMPARISON -->
-  <section class="compare">
-    <h2 class="display">Ship faster without the hiring bottleneck.</h2>
+  <section class="compare card card-pale">
+    <h2 class="display">Ship faster <span class="dim">without the hiring bottleneck.</span></h2>
     <div class="compare-rows">
       <div class="compare-row">
         <span class="compare-label">With Dheet</span>
-        <div class="compare-bar bar-dheet"><span>Ship with us</span></div>
+        <div class="compare-track">
+          <div class="bar-dheet">Ship with us</div>
+        </div>
       </div>
       <div class="compare-row">
         <span class="compare-label">In-house</span>
-        <div class="compare-bar bar-inhouse">
+        <div class="compare-track bar-inhouse">
           <span>Job advert</span><span>Interview</span><span>Notice period</span><span>Onboard</span>
         </div>
       </div>
@@ -198,58 +197,77 @@
   </section>
 
   <!-- ROLES -->
-  <section class="roles" id="roles">
+  <section class="roles card card-white" id="roles">
     <p class="eyebrow">Roles</p>
     <h2 class="display">We're always on the lookout for great talent.</h2>
     <ul class="role-list">
-      <li><span>Freelance Product Designer</span><a class="pill pill-outline" href="mailto:london@studiodheet.com?subject=Freelance%20Product%20Designer">Apply</a></li>
-      <li><span>Product Manager (contract)</span><a class="pill pill-outline" href="mailto:london@studiodheet.com?subject=Product%20Manager%20(contract)">Apply</a></li>
+      <li><span>Freelance Product Designer</span><a class="pill pill-outline" href="mailto:london@studiodheet.com?subject=Freelance%20Product%20Designer">Apply <span class="star">&#10142;</span></a></li>
+      <li><span>Product Manager (contract)</span><a class="pill pill-outline" href="mailto:london@studiodheet.com?subject=Product%20Manager%20(contract)">Apply <span class="star">&#10142;</span></a></li>
     </ul>
   </section>
 
-  <!-- STUDIOS -->
-  <section class="studios">
-    <p class="eyebrow">Our studios</p>
-    <div class="studio-grid">
-      <div class="studio"><h3>London</h3><a href="mailto:london@studiodheet.com">london@studiodheet.com</a></div>
-      <div class="studio"><h3>Dubai</h3><a href="mailto:dubai@studiodheet.com">dubai@studiodheet.com</a></div>
-    </div>
-  </section>
-
   <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <p class="eyebrow">Contact</p>
-    <h2 class="display">Let's collaborate</h2>
-    <!-- Replace maqgkvjr with your Formspree form ID (see MIGRATION.md) -->
-    <form class="madlib" action="https://formspree.io/f/maqgkvjr" method="POST">
-      <p>My name is <input type="text" name="name" placeholder="Jane Doe" required aria-label="Your name"> from <input type="text" name="company" placeholder="Acme Inc" required aria-label="Your company">.</p>
-      <p>We're at
-        <select name="stage" required aria-label="Funding stage">
-          <option value="" disabled selected>stage</option>
-          <option>Pre-seed</option><option>Seed</option><option>Series A</option><option>Series B</option><option>Series C+</option>
-        </select>
-        and I want to chat about
-        <select name="topic" required aria-label="Topic">
-          <option value="" disabled selected>a project</option>
-          <option>Web app</option><option>Mobile app</option><option>Branding</option><option>Other</option>
-        </select>.
-      </p>
-      <p>You can reach me at <input type="email" name="email" placeholder="jane@acme.com" required aria-label="Your email">.</p>
-      <button type="submit" class="pill pill-lg">Submit</button>
+  <section class="contact card card-white" id="contact">
+    <p class="eyebrow eyebrow-center">Contact</p>
+    <h2 class="display contact-title">Let's collaborate</h2>
+    <form class="contact-form" action="https://formspree.io/f/maqgkvjr" method="POST">
+      <div class="field">
+        <label for="f-name">My name is *</label>
+        <input id="f-name" type="text" name="name" placeholder="First name" required>
+      </div>
+      <div class="field">
+        <label for="f-company">from *</label>
+        <input id="f-company" type="text" name="company" placeholder="Company" required>
+      </div>
+      <div class="field">
+        <span class="field-label">We're at *</span>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="stage" value="Pre-seed" required><span>Pre-seed</span></label>
+          <label class="chip"><input type="radio" name="stage" value="Seed"><span>Seed</span></label>
+          <label class="chip"><input type="radio" name="stage" value="Series A"><span>Series A</span></label>
+          <label class="chip"><input type="radio" name="stage" value="Series B"><span>Series B</span></label>
+          <label class="chip"><input type="radio" name="stage" value="Series C+"><span>Series C+</span></label>
+        </div>
+      </div>
+      <div class="field">
+        <span class="field-label">I want to chat about *</span>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="topic" value="Web app" required><span>Web app</span></label>
+          <label class="chip"><input type="radio" name="topic" value="Mobile app"><span>Mobile app</span></label>
+          <label class="chip"><input type="radio" name="topic" value="Branding"><span>Branding</span></label>
+          <label class="chip"><input type="radio" name="topic" value="Other"><span>Other</span></label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-email">You can reach me at *</label>
+        <input id="f-email" type="email" name="email" placeholder="Email" required>
+      </div>
+      <button type="submit" class="pill pill-outline pill-submit">Submit</button>
     </form>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <nav class="footer-links">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#pricing">Pricing</a>
-      <a href="case-studies.html">Case Studies</a>
-      <a href="#roles">Roles</a>
-      <a href="#contact">Contact</a>
-      <a href="https://www.linkedin.com/company/studiodheet" target="_blank" rel="noopener">LinkedIn</a>
-    </nav>
+  <footer class="footer card card-green">
+    <div class="footer-top">
+      <div class="footer-studios">
+        <p class="footer-heading">Our Studios</p>
+        <div class="studio-row"><span>London</span><a href="mailto:london@studiodheet.com">london@studiodheet.com</a></div>
+        <div class="studio-row"><span>Dubai</span><a href="mailto:dubai@studiodheet.com">dubai@studiodheet.com</a></div>
+      </div>
+      <nav class="footer-links">
+        <div>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="case-studies.html">Case Studies</a>
+        </div>
+        <div>
+          <a href="#roles">Roles</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.linkedin.com/company/studiodheet" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </nav>
+    </div>
     <p class="footer-wordmark" aria-hidden="true">studio dheet</p>
   </footer>
 
