@@ -210,39 +210,21 @@
   <section class="contact card card-white" id="contact">
     <p class="eyebrow eyebrow-center">Contact</p>
     <h2 class="display contact-title">Let's collaborate</h2>
-    <form class="contact-form" action="https://formspree.io/f/maqgkvjr" method="POST">
-      <div class="field">
-        <label for="f-name">My name is *</label>
-        <input id="f-name" type="text" name="name" placeholder="First name" required>
-      </div>
-      <div class="field">
-        <label for="f-company">from *</label>
-        <input id="f-company" type="text" name="company" placeholder="Company" required>
-      </div>
-      <div class="field">
-        <span class="field-label">We're at *</span>
-        <div class="chips">
-          <label class="chip"><input type="radio" name="stage" value="Pre-seed" required><span>Pre-seed</span></label>
-          <label class="chip"><input type="radio" name="stage" value="Seed"><span>Seed</span></label>
-          <label class="chip"><input type="radio" name="stage" value="Series A"><span>Series A</span></label>
-          <label class="chip"><input type="radio" name="stage" value="Series B"><span>Series B</span></label>
-          <label class="chip"><input type="radio" name="stage" value="Series C+"><span>Series C+</span></label>
-        </div>
-      </div>
-      <div class="field">
-        <span class="field-label">I want to chat about *</span>
-        <div class="chips">
-          <label class="chip"><input type="radio" name="topic" value="Web app" required><span>Web app</span></label>
-          <label class="chip"><input type="radio" name="topic" value="Mobile app"><span>Mobile app</span></label>
-          <label class="chip"><input type="radio" name="topic" value="Branding"><span>Branding</span></label>
-          <label class="chip"><input type="radio" name="topic" value="Other"><span>Other</span></label>
-        </div>
-      </div>
-      <div class="field">
-        <label for="f-email">You can reach me at *</label>
-        <input id="f-email" type="email" name="email" placeholder="Email" required>
-      </div>
-      <button type="submit" class="pill pill-outline pill-submit">Submit</button>
+    <form class="madlib" action="https://formspree.io/f/maqgkvjr" method="POST">
+      <p>My name is <input type="text" name="name" placeholder="Jane Doe" required aria-label="Your name"> from <input type="text" name="company" placeholder="Acme Inc" required aria-label="Your company">.</p>
+      <p>We're at
+        <select name="stage" required aria-label="Funding stage">
+          <option value="" disabled selected>stage</option>
+          <option>Pre-seed</option><option>Seed</option><option>Series A</option><option>Series B</option><option>Series C+</option>
+        </select>
+        and I want to chat about
+        <select name="topic" required aria-label="Topic">
+          <option value="" disabled selected>a project</option>
+          <option>Web app</option><option>Mobile app</option><option>Branding</option><option>Other</option>
+        </select>.
+      </p>
+      <p>You can reach me at <input type="email" name="email" placeholder="jane@acme.com" required aria-label="Your email">.</p>
+      <button type="submit" class="pill pill-lg">Submit</button>
     </form>
   </section>
 
