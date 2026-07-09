@@ -25,7 +25,7 @@
   --hairline: #E5E5E5;
   --serif: 'Denton', 'Cormorant Garamond', Georgia, serif;
   --sans: 'Inter', -apple-system, sans-serif;
-  --gutter: 14px;
+  --gutter: clamp(14px, 5vw, 80px);
   --pad-x: clamp(24px, 5vw, 72px);
   --pad-y: clamp(48px, 7vw, 96px);
 }
