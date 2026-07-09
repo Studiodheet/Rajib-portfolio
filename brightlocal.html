@@ -9,18 +9,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-  <header class="wrap">
-    <div class="identity">
-      <a class="name" href="index.html">Rajib Moazzam</a>
-      <span class="role">Creative Director &amp; Product Designer</span>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About me</a>
+  <div class="announce">2 spaces left for August</div>
+
+  <header class="nav">
+    <a href="index.html" class="nav-logo">studio dheet<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">About</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="index.html#roles">Roles</a>
     </nav>
+    <div class="nav-right">
+      <a href="index.html#contact" class="pill">Book call <span class="star">&#10022;</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
 
   <main>
@@ -237,9 +246,16 @@
 
   </main>
 
-  <footer class="wrap">
-    <p>© 2026 Rajib Moazzam · London</p>
-  </footer>
-
+  <script>
+    var burger = document.getElementById('navBurger');
+    var links = document.getElementById('navLinks');
+    burger.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { links.classList.remove('open'); });
+    });
+  </script>
 </body>
 </html>
