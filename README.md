@@ -1,33 +1,49 @@
-# Rajib Moazzam - Portfolio
+# Rajib Moazzam — Personal Portfolio
 
-A static portfolio site. No build step, no dependencies. Edit the HTML, push, done.
+Static HTML/CSS. No build step. Same design system as the Studio Dheet site (white/black, mint #A4FCA7, Cormorant Garamond + Inter) but framed as a personal portfolio.
 
-## Files
+## Pages
 
-- `index.html` - homepage (hero + project sections + outro)
-- `about.html` - about page
-- `styles.css` - all styling; colours and fonts are CSS variables at the top
-- `images/` - drop logos and screenshots here (create the folder when needed)
+- index.html — case studies listing (homepage)
+- brightlocal.html
+- evolution.html
+- halal-screener.html
+- nisba-brand.html
+- styles.css — shared stylesheet
 
-## Editing
+## Images
 
-- Every project section in `index.html` is marked with a comment like
-  `<!-- ============ PROJECT: WAGGLE ============ -->`.
-  Duplicate a whole section to add a project; delete one to remove it.
-- Replace any paragraph starting with "Placeholder:" with your real copy.
-- To swap a text logo for an image: put the SVG/PNG in `images/`, then inside
-  the `.logo` div use `<img src="images/logo.svg" alt="Name" height="32">`.
-- Colours and fonts live in the `:root` block at the top of `styles.css`.
+Local image paths match the existing Studio Dheet portfolio repo exactly. Copy the images folder over from your existing repo:
 
-## Preview locally
+```
+cp -R ~/portfolio/images ~/rajib-portfolio/images
+```
 
-From the project folder:
-
-    python3 -m http.server 8000
-
-Then open http://localhost:8000 in your browser.
+Squarespace-hosted images (TaylorMade, Amex, TFG, ISS, Sky Bet, Halal Screener carousel) are referenced by absolute URL and need nothing.
 
 ## Deploy
 
-Push to GitHub, import the repo in Vercel, framework preset "Other",
-no build command, output directory left blank. Every `git push` redeploys.
+```
+cd ~
+unzip -o ~/Downloads/rajib-portfolio.zip
+cd rajib-portfolio
+cp -R ~/portfolio/images ./images
+git init
+git add .
+git commit -m "Personal portfolio v1"
+```
+
+Create a new empty repo on GitHub (e.g. Studiodheet/rajib-portfolio), then:
+
+```
+git remote add origin git@github.com:Studiodheet/rajib-portfolio.git
+git branch -M main
+git push -u origin main
+```
+
+Then in Vercel: Add New Project, import rajib-portfolio, framework preset "Other", deploy. Done.
+
+## Before going live
+
+1. Check the LinkedIn URL in the nav and footer (currently linkedin.com/in/rajibmoazzam) and swap in your actual profile URL.
+2. Check the contact email (currently rajib@studiodheet.com). Swap for a personal address if you want the job-search version fully separate from the studio.
