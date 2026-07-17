@@ -136,6 +136,9 @@ a { color: var(--black); }
 }
 
 .project-head {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 40px;
   padding: 0 var(--pad);
   max-width: 1180px;
 }
@@ -145,10 +148,10 @@ a { color: var(--black); }
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  padding-top: 8px;
 }
 
-.project-head h2 {
+.project-content h2 {
   font-family: var(--serif);
   font-weight: 400;
   font-size: clamp(1.9rem, 3.6vw, 3rem);
@@ -473,6 +476,7 @@ a { color: var(--black); }
 
 @media (max-width: 760px) {
   .site-nav { display: none; }
+  .project-head { grid-template-columns: 1fr; gap: 16px; }
   .project-cols { grid-template-columns: 1fr; gap: 18px; }
   .cs-nav { grid-template-columns: 1fr; }
   .cs-nav a:last-child { text-align: left; border-left: none; border-top: 1px solid var(--line); }
