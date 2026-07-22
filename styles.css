@@ -757,3 +757,11 @@ footer {
   border-top: 1px solid var(--rule, #ececec);
   padding-top: clamp(80px, 12vw, 180px);
 }
+
+/* Wider reading column on case study pages */
+.case-section {
+  max-width: 860px;
+}
+.case-intro {
+  max-width: 960px;
+}
