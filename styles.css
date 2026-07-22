@@ -751,3 +751,9 @@ footer {
   .carousel .slide { height: 240px; }
   .case-meta { grid-template-columns: 1fr; }
 }
+
+/* Outro reuses hero styles with a top border */
+.ph-outro {
+  border-top: 1px solid var(--rule, #ececec);
+  padding-top: clamp(80px, 12vw, 180px);
+}
