@@ -528,3 +528,12 @@ a { color: var(--black); }
   margin-left: calc(50% - 50vw);
   padding-right: 0 !important;
 }
+
+/* Carousel final: first image aligns with the project label, bleeds right */
+.carousel {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 4px 0 4px var(--page-gutter) !important;
+}
+.carousel::before { display: none; }
+.carousel::after { display: none; }
