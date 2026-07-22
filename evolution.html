@@ -3,156 +3,208 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolution | Studio Dheet</title>
   <meta name="description" content="Product design case study for Evolution, Twenty First Group's AI-powered talent identification platform used by leading football clubs for squad analysis, player comparison and transfer recommendations.">
-  <title>Evolution | Rajib Moazzam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <a class="wordmark" href="index.html">rajib moazzam.</a>
-    <nav class="site-nav">
+  <div style="background:#A4FCA7;color:#0A0A0A;text-align:center;font-family:'Cormorant Garamond',Georgia,serif;font-size:14px;padding:8px clamp(20px,5vw,72px);">2 spaces left for August</div>
+  <header class="nav">
+    <a href="index.html" class="nav-logo">rajib moazzam<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
       <a href="index.html">Work</a>
       <a href="https://www.linkedin.com/in/rajibmoazzam" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:rajib@studiodheet.com">Contact</a>
     </nav>
-    <a class="nav-cta" href="mailto:rajib@studiodheet.com">Get in touch</a>
+    <div class="nav-right">
+      <a href="mailto:rajib@studiodheet.com" class="pill">Get in touch <span class="star">&#10022;</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <div class="cs-hero">
-    <img src="images/evolution/Hero.png" alt="Evolution platform cover">
-  </div>
+  <main>
 
-  <section class="cs-title">
-    <p class="client">Twenty First Group</p>
-    <h1>Evolution</h1>
-    <p class="standfirst">Leading product design for an AI-powered talent identification platform used by leading football clubs, turning dense scouting data and predictive models into transfer decisions worth millions.</p>
-  </section>
-
-  <div class="meta-strip">
-    <div><h4>Role</h4><p>Head of Design,<br>Product Design Lead</p></div>
-    <div><h4>Key Collaborators</h4><p>Data Scientists,<br>Product &amp; Engineering</p></div>
-    <div><h4>Client</h4><p>Twenty First Group,<br>elite football clubs</p></div>
-    <div><h4>Scope</h4><p>Squad analysis<br>Player comparison<br>Transfer recommendations</p></div>
-    <div><h4>Platform</h4><p>Web application,<br>responsive mobile</p></div>
-  </div>
-
-  <div class="cs-figure">
-    <img src="images/evolution/Search%20and%20Player%20Database.png" alt="Evolution search and player database">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">The problem</p>
-    <h2>Million-pound decisions made from spreadsheets and gut feel</h2>
-    <p>Twenty First Group is a sports intelligence consultancy advising organisations like the Premier League, European Tour and FIFA. Their data science team had built genuinely powerful models for evaluating footballers: how a player performs relative to their league, how that performance translates across markets, and how they might develop over time.</p>
-    <p>The problem was access. The insight lived with analysts and in static reports, while the people making the actual calls, sporting directors, heads of recruitment, scouts, worked from fragmented spreadsheets, video clips, and instinct. Comparing a midfielder in the Brazilian Serie A against one in the Eredivisie meant reconciling incompatible data sets, and transfer windows don't wait for that.</p>
-    <p>Evolution was the answer: a platform that put the models directly in the hands of clubs, so a director of football could ask sharper questions of a global talent pool without a data scientist in the room.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/evolution/discovery.png" alt="Discovery work for Evolution">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Discovery</p>
-    <h2>Sitting between the models and the people who buy players</h2>
-    <p>The starting point was understanding both sides of the gap. On one side, the data scientists, whose models could rank and project players across global markets but whose outputs were dense, probabilistic, and easy to misread. On the other, recruitment teams at clubs, who think in shortlists, budgets, squad gaps, and deadlines.</p>
-    <p>I worked directly with the data science team to unpack what the models could genuinely support, and where confidence dropped off. That distinction mattered: showing a projection without communicating its certainty is how expensive mistakes happen. The design challenge wasn't visualising data, it was building the right level of trust in it.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/evolution/stats.png" alt="Player statistics views">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Product strategy</p>
-    <h2>AI that recommends, people who decide</h2>
-    <p>Evolution's core promise was AI-driven transfer recommendations: surfacing players a club should be looking at based on their squad profile, budget, and style of play. But no sporting director will stake their job on a black box. The product had to show its working.</p>
-    <p>Every recommendation was designed to be interrogable. Users could trace why a player surfaced, compare them against known quantities in leagues they understood, and adjust the parameters themselves through custom filters. The AI narrows a global market of thousands of players down to a shortlist worth watching. The humans take it from there.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/evolution/Custom%20Filters.png" alt="Custom filters interface">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Design process</p>
-    <h2>A design system built for density</h2>
-    <p>Scouting platforms live and die on information density. The people using Evolution wanted more data on screen, not less, but dense doesn't have to mean impenetrable. I led the development of a design system built specifically for data-heavy interfaces: consistent chart components, comparison layouts, status indicators and typographic hierarchy that let complex screens stay scannable.</p>
-    <p>The system meant new features, and there was always a roadmap of them, could ship without every screen becoming a bespoke design problem. It also kept the product coherent as the team scaled around it.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/evolution/Design%20System.png" alt="Evolution design system">
-  </div>
-
-  <div class="cs-figure">
-    <img src="images/evolution/system.png" alt="Design system components">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Key screens</p>
-    <h2>The player profile</h2>
-    <p>The player profile is where a name becomes a case. It brings together performance data, market context, and the model's projections in a single view, structured so a recruitment lead can move from headline judgement to underlying evidence without leaving the page. The comparison views sit alongside, letting clubs benchmark a target against players they already know intimately, the fastest way to build intuition about an unfamiliar market.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/evolution/Player%20Profile.png" alt="Player profile screen">
-  </div>
-
-  <section class="cs-section">
-    <h3>Scenario planning</h3>
-    <p>Recruitment doesn't happen one player at a time. Clubs plan squads across seasons, budgets, and contract cycles. The scenario planning view let teams model how different signings would reshape their squad profile, testing decisions before committing millions to them.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/evolution/Scenario%20planning%20overview.png" alt="Scenario planning overview">
-  </div>
-
-  <section class="cs-section">
-    <h3>Evolution on the move</h3>
-    <p>Scouts spend their lives in stadiums and airports, not at desks. The responsive mobile experience focused on the moments that matter away from the office: checking a player profile from the stands, reviewing a shortlist on the road, and capturing quick judgements while they're fresh.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/evolution/mobile.png" alt="Evolution mobile experience">
-  </div>
-
-  <div class="cs-figure">
-    <img src="images/evolution/Mobile%203.png" alt="Evolution mobile screens">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Impact</p>
-    <h2>In the hands of clubs worldwide</h2>
-    <p>Evolution became a core product in Twenty First Group's portfolio, used by leading football clubs globally to analyse squads, compare players across markets, and inform transfer strategy. It took intelligence that previously required an analyst in the room and made it something a club could act on directly.</p>
-    <p>For the design team, it set the pattern for how we approached every data product that followed: work embedded with the data scientists, design for trust before beauty, and never let the model make a decision a human should own.</p>
-  </section>
-
-  <nav class="cs-nav">
-    <a href="brightlocal.html">
-      <p class="dir">Previous case study</p>
-      <p class="title">BrightLocal</p>
-    </a>
-    <a href="halal-screener.html">
-      <p class="dir">Next case study</p>
-      <p class="title">Nisba Halal Screener</p>
-    </a>
-  </nav>
-
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div>
-        <h3>Let's talk</h3>
-        <a href="mailto:rajib@studiodheet.com">rajib@studiodheet.com</a>
-      </div>
-      <div class="footer-links">
-        <a href="index.html">Work</a>
-        <a href="https://www.linkedin.com/in/rajibmoazzam" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:rajib@studiodheet.com">Email</a>
-      </div>
+    <!-- Full-bleed hero image -->
+    <div class="case-hero">
+      <img src="images/evolution/Hero.png" alt="Evolution platform cover">
     </div>
-    <p class="footer-wordmark">rajib moazzam</p>
+
+    <!-- Title block -->
+    <section class="case-intro">
+      <div class="case-eyebrow">Twenty First Group</div>
+      <h1>Evolution</h1>
+      <p class="case-lede">Leading product design for an AI-powered talent identification platform used by leading football clubs, turning dense scouting data and predictive models into transfer decisions worth millions.</p>
+    </section>
+
+    <!-- Project metadata strip -->
+    <section class="case-meta">
+      <div class="case-meta-item">
+        <h4>Role</h4>
+        <p>Head of Design,<br>Product Design Lead</p>
+      </div>
+      <div class="case-meta-item">
+        <h4>Key Collaborators</h4>
+        <p>Data Scientists,<br>Product &amp; Engineering</p>
+      </div>
+      <div class="case-meta-item">
+        <h4>Client</h4>
+        <p>Twenty First Group,<br>elite football clubs</p>
+      </div>
+      <div class="case-meta-item">
+        <h4>Scope</h4>
+        <p>Squad analysis<br>Player comparison<br>Transfer recommendations</p>
+      </div>
+      <div class="case-meta-item">
+        <h4>Platform</h4>
+        <p>Web application,<br>responsive mobile</p>
+      </div>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/evolution/Search%20and%20Player%20Database.png" alt="Evolution search and player database">
+    </figure>
+
+    <!-- THE PROBLEM -->
+    <section class="case-section">
+      <div class="case-eyebrow">The problem</div>
+      <h2>Million-pound decisions made from spreadsheets and gut feel</h2>
+      <p>Twenty First Group is a sports intelligence consultancy advising organisations like the Premier League, European Tour and FIFA. Their data science team had built genuinely powerful models for evaluating footballers: how a player performs relative to their league, how that performance translates across markets, and how they might develop over time.</p>
+      <p>The problem was access. The insight lived with analysts and in static reports, while the people making the actual calls, sporting directors, heads of recruitment, scouts, worked from fragmented spreadsheets, video clips, and instinct. Comparing a midfielder in the Brazilian Serie A against one in the Eredivisie meant reconciling incompatible data sets, and transfer windows don't wait for that.</p>
+      <p>Evolution was the answer: a platform that put the models directly in the hands of clubs, so a director of football could ask sharper questions of a global talent pool without a data scientist in the room.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/evolution/discovery.png" alt="Discovery work for Evolution">
+    </figure>
+
+    <!-- DISCOVERY -->
+    <section class="case-section">
+      <div class="case-eyebrow">Discovery</div>
+      <h2>Sitting between the models and the people who buy players</h2>
+      <p>The starting point was understanding both sides of the gap. On one side, the data scientists, whose models could rank and project players across global markets but whose outputs were dense, probabilistic, and easy to misread. On the other, recruitment teams at clubs, who think in shortlists, budgets, squad gaps, and deadlines.</p>
+      <p>I worked directly with the data science team to unpack what the models could genuinely support, and where confidence dropped off. That distinction mattered: showing a projection without communicating its certainty is how expensive mistakes happen. The design challenge wasn't visualising data, it was building the right level of trust in it.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/evolution/stats.png" alt="Player statistics views">
+    </figure>
+
+    <!-- PRODUCT STRATEGY -->
+    <section class="case-section">
+      <div class="case-eyebrow">Product strategy</div>
+      <h2>AI that recommends, people who decide</h2>
+      <p>Evolution's core promise was AI-driven transfer recommendations: surfacing players a club should be looking at based on their squad profile, budget, and style of play. But no sporting director will stake their job on a black box. The product had to show its working.</p>
+      <p>Every recommendation was designed to be interrogable. Users could trace why a player surfaced, compare them against known quantities in leagues they understood, and adjust the parameters themselves through custom filters. The AI narrows a global market of thousands of players down to a shortlist worth watching. The humans take it from there.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/evolution/Custom%20Filters.png" alt="Custom filters interface">
+    </figure>
+
+    <!-- DESIGN PROCESS -->
+    <section class="case-section">
+      <div class="case-eyebrow">Design process</div>
+      <h2>A design system built for density</h2>
+      <p>Scouting platforms live and die on information density. The people using Evolution wanted more data on screen, not less, but dense doesn't have to mean impenetrable. I led the development of a design system built specifically for data-heavy interfaces: consistent chart components, comparison layouts, status indicators and typographic hierarchy that let complex screens stay scannable.</p>
+      <p>The system meant new features, and there was always a roadmap of them, could ship without every screen becoming a bespoke design problem. It also kept the product coherent as the team scaled around it.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/evolution/Design%20System.png" alt="Evolution design system">
+    </figure>
+
+    <figure class="case-figure">
+      <img src="images/evolution/system.png" alt="Design system components">
+    </figure>
+
+    <!-- KEY SCREENS -->
+    <section class="case-section">
+      <div class="case-eyebrow">Key screens</div>
+      <h2>The player profile</h2>
+      <p>The player profile is where a name becomes a case. It brings together performance data, market context, and the model's projections in a single view, structured so a recruitment lead can move from headline judgement to underlying evidence without leaving the page. The comparison views sit alongside, letting clubs benchmark a target against players they already know intimately, the fastest way to build intuition about an unfamiliar market.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/evolution/Player%20Profile.png" alt="Player profile screen">
+    </figure>
+
+    <section class="case-section">
+      <h3>Scenario planning</h3>
+      <p>Recruitment doesn't happen one player at a time. Clubs plan squads across seasons, budgets, and contract cycles. The scenario planning view let teams model how different signings would reshape their squad profile, testing decisions before committing millions to them.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/evolution/Scenario%20planning%20overview.png" alt="Scenario planning overview">
+    </figure>
+
+    <section class="case-section">
+      <h3>Evolution on the move</h3>
+      <p>Scouts spend their lives in stadiums and airports, not at desks. The responsive mobile experience focused on the moments that matter away from the office: checking a player profile from the stands, reviewing a shortlist on the road, and capturing quick judgements while they're fresh.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/evolution/mobile.png" alt="Evolution mobile experience">
+    </figure>
+
+    <figure class="case-figure">
+      <img src="images/evolution/Mobile%203.png" alt="Evolution mobile screens">
+    </figure>
+
+    <!-- IMPACT -->
+    <section class="case-section">
+      <div class="case-eyebrow">Impact</div>
+      <h2>In the hands of clubs worldwide</h2>
+      <p>Evolution became a core product in Twenty First Group's portfolio, used by leading football clubs globally to analyse squads, compare players across markets, and inform transfer strategy. It took intelligence that previously required an analyst in the room and made it something a club could act on directly.</p>
+      <p>For the design team, it set the pattern for how we approached every data product that followed: work embedded with the data scientists, design for trust before beauty, and never let the model make a decision a human should own.</p>
+    </section>
+
+    <figure class="case-figure bleed">
+      <img src="images/evolution/Hero.png" alt="Evolution platform">
+    </figure>
+
+    <!-- Previous / Next navigation -->
+    <nav class="case-nav">
+      <a class="prev" href="case-studies.html">
+        <span class="prev-label">All work</span>
+        Back to case studies
+      </a>
+      <a class="next" href="halal-screener.html">
+        <span class="next-label">Next case study</span>
+        Nisba Halal Screener
+      </a>
+    </nav>
+
+  </main>
+
+  <footer style="background:#A4FCA7;border-radius:28px;margin:14px;padding:clamp(48px,7vw,96px) clamp(24px,5vw,72px) 0;overflow:hidden;font-family:'Inter',-apple-system,sans-serif;color:#0A0A0A;">
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:40px;margin-bottom:clamp(40px,6vw,72px);">
+      <div>
+        <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;margin:0 0 14px;">Our Studios</p>
+        <div style="display:grid;grid-template-columns:120px auto;gap:12px;font-size:14px;padding:4px 0;"><span>London</span><a href="mailto:london@studiodheet.com" style="color:#0A0A0A;text-decoration:none;">london@studiodheet.com</a></div>
+        <div style="display:grid;grid-template-columns:120px auto;gap:12px;font-size:14px;padding:4px 0;"><span>Dubai</span><a href="mailto:dubai@studiodheet.com" style="color:#0A0A0A;text-decoration:none;">dubai@studiodheet.com</a></div>
+      </div>
+      <nav style="display:flex;gap:clamp(32px,5vw,80px);">
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <a href="index.html#about" style="font-size:14px;color:#0A0A0A;text-decoration:underline;text-underline-offset:3px;">About</a>
+          <a href="index.html#services" style="font-size:14px;color:#0A0A0A;text-decoration:underline;text-underline-offset:3px;">Services</a>
+          <a href="index.html#pricing" style="font-size:14px;color:#0A0A0A;text-decoration:underline;text-underline-offset:3px;">Pricing</a>
+          <a href="case-studies.html" style="font-size:14px;color:#0A0A0A;text-decoration:underline;text-underline-offset:3px;">Case Studies</a>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <a href="index.html#roles" style="font-size:14px;color:#0A0A0A;text-decoration:underline;text-underline-offset:3px;">Roles</a>
+          <a href="index.html#contact" style="font-size:14px;color:#0A0A0A;text-decoration:underline;text-underline-offset:3px;">Contact</a>
+          <a href="https://www.linkedin.com/company/studiodheet" target="_blank" rel="noopener" style="font-size:14px;color:#0A0A0A;text-decoration:underline;text-underline-offset:3px;">LinkedIn</a>
+        </div>
+      </nav>
+    </div>
+    <p aria-hidden="true" style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:400;font-size:clamp(64px,14.5vw,230px);line-height:0.75;letter-spacing:-0.02em;white-space:nowrap;text-align:center;transform:translateY(12%);margin:0;">rajib moazzam</p>
   </footer>
 
 </body>

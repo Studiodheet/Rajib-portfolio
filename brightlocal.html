@@ -3,222 +3,255 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Leading a complete product design transformation for the world's third-largest local SEO platform. Design system, AI features, onboarding, and team scaling.">
   <title>BrightLocal Product Design | Rajib Moazzam</title>
+  <meta name="description" content="Leading a complete product design transformation for the world's third-largest local SEO platform. Design system, AI features, onboarding, and team scaling.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <a class="wordmark" href="index.html">rajib moazzam.</a>
-    <nav class="site-nav">
+  <header class="nav">
+    <a href="index.html" class="nav-logo">rajib moazzam<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
       <a href="index.html">Work</a>
       <a href="https://www.linkedin.com/in/rajibmoazzam" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:rajib@studiodheet.com">Contact</a>
     </nav>
-    <a class="nav-cta" href="mailto:rajib@studiodheet.com">Get in touch</a>
+    <div class="nav-right">
+      <a href="mailto:rajib@studiodheet.com" class="pill">Get in touch <span class="star">&#10022;</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <div class="cs-hero">
-    <img src="images/brightlocal/Hero.png" alt="BrightLocal product design cover">
-  </div>
+  <main>
 
-  <section class="cs-title">
-    <p class="client">BrightLocal</p>
-    <h1>Product Design Transformation</h1>
-    <p class="standfirst">Leading a complete product design transformation for the world's third-largest local SEO platform, bridging the gap between brand and product, building a design system from scratch, scaling the UX team, and designing AI-powered features that turned complex data into clear, prioritised actions.</p>
-  </section>
-
-  <div class="meta-strip">
-    <div><h4>Role</h4><p>Creative Director<br>(Design Director)</p></div>
-    <div><h4>Team</h4><p>Scaled from 4 to 16<br>(UX team 2 to 6)</p></div>
-    <div><h4>Tools</h4><p>Figma, FigJam</p></div>
-    <div><h4>Duration</h4><p>2022 - 2025</p></div>
-    <div><h4>Status</h4><p>Live, all features shipped and adopted</p></div>
-  </div>
-
-  <section class="results">
-    <p class="label">Results</p>
-    <div class="results-grid">
-      <div class="result-card">
-        <p class="num">2x</p>
-        <h4>Annual revenue</h4>
-        <p>From ~&pound;10M to ~&pound;20M over the course of the product design transformation</p>
-      </div>
-      <div class="result-card">
-        <p class="num">9%</p>
-        <h4>Week-one retention</h4>
-        <p>Up from 2%, a fundamental shift in how new users experienced the product</p>
-      </div>
-      <div class="result-card">
-        <p class="num">28%</p>
-        <h4>Activation improvement</h4>
-        <p>From redesigned onboarding that showed users value within minutes, not days</p>
-      </div>
-      <div class="result-card">
-        <p class="num">58</p>
-        <h4>NPS score</h4>
-        <p>Up from 26. Existing users happier, new users staying, trust earned not lost</p>
-      </div>
+    <div class="case-hero">
+      <img src="images/brightlocal/Hero.png" alt="BrightLocal product design cover">
     </div>
-  </section>
 
-  <div class="cs-figure">
-    <img src="https://images.squarespace-cdn.com/content/v1/664cdfb61a9b957f0d5a0d5d/1718021072636-0VM8CKVRAXMAD670XJ5O/Laptop-Mockup.png?format=2000w" alt="BrightLocal product on laptop">
-  </div>
+    <section class="case-intro">
+      <div class="case-eyebrow">BrightLocal</div>
+      <h1>Product Design Transformation</h1>
+      <p class="case-lede">Leading a complete product design transformation for the world's third-largest local SEO platform, bridging the gap between brand and product, building a design system from scratch, scaling the UX team, and designing AI-powered features that turned complex data into clear, prioritised actions.</p>
+    </section>
 
-  <section class="cs-section">
-    <p class="label">The problem</p>
-    <h2>Beautiful marketing, broken product</h2>
-    <p>When I joined BrightLocal as Creative Director, the company had stagnated. Revenue had plateaued at around &pound;10M for two years. Tens of thousands of people were signing up for a free trial every week, but only around 2% came back on day two.</p>
-    <p>The product experience was the problem. The platform had been built over 10 years across three separate codebases stitched together by engineering. There was no onboarding flow, no home dashboard, no design system, and no product design principles. Users signed up, were dumped into the tool, and were expected to figure it out by watching 15-20 minute tutorial videos. Most didn't bother.</p>
-    <p>The disconnect between brand and product was making it worse. The marketing and website looked polished and modern. When users landed in the product, it looked like a completely different company. Users reported feeling misled, and that distrust was directly driving churn.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/Old%20product.png" alt="Old BrightLocal product">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Discovery</p>
-    <h2>Three groups, three very different stories</h2>
-    <p>Before designing anything, I needed to understand the full picture. I started by meeting every department head: CEO, CTO, CMO, Head of Sales, Customer Success. I mapped how the business worked, where the friction points were, and what each team believed was causing the stagnation.</p>
-    <p>Then I pushed the company to run their first ever customer survey, sent to tens of thousands of existing users. Alongside this, I set up three distinct focus groups through the customer success team: active users who were still paying, users who had subscribed but churned, and users who signed up for the free trial but never converted. We offered &pound;50 Amazon vouchers for participation, and the insights from these three groups shaped every product design decision that followed.</p>
-    <h3>What the research told us</h3>
-    <p>Three findings emerged clearly across every research group.</p>
-    <p>First, the brand-to-product trust gap. Users consistently said that what they saw in marketing didn't match what they experienced in the product. The disconnect was so severe that it was actively damaging trust and driving people away before they even tried the tools.</p>
-    <p>Second, no guidance. Users were dumped into the product with no onboarding, no dashboard, no sense of where to start. If you need to study to use a tool, the tool isn't doing its job.</p>
-    <p>Third, no differentiation. I ran an exercise where I removed all logos from 15 competitor landing pages and asked BrightLocal employees to identify their own website. Most couldn't. The two competitors succeeding (SEMrush and Yext) had distinct brand and product presence. BrightLocal had neither.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/Discovery.png" alt="Discovery research">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Product design strategy</p>
-    <h2>Principles first, pixels second</h2>
-    <p>The first thing I did was establish product design principles. There were none. No North Star for quality, no shared definition of what good looked like, no alignment between brand values and product experience.</p>
-    <p>We defined principles together across brand and product: delight customers, make it intuitive (no one should need to read paragraphs or watch videos to use a feature), and be visually distinct from competitors. We likened BrightLocal to a skate brand meets local SEO company: independent, welcoming, a bit of an upstart, based in Brighton. That personality needed to show up in the product, not just the marketing.</p>
-    <p>Critically, we didn't design the brand identity separately and then adapt it for product. We built them cohesively. The design system, the illustration style, even the brand mascot that became a companion character inside the tool, all designed as one connected system from the start.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/Belief%20and%20Principles%20Icons.png" alt="Design beliefs and principles">
-  </div>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/Visual%20Example.png" alt="Brand and product visual direction">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Design system</p>
-    <h2>One system to replace three codebases</h2>
-    <p>The old product was built on three separate platforms stitched together. Every time a new feature was added, it looked slightly different from the last because there was no shared component library. The visual inconsistency compounded over a decade of uncoordinated feature development.</p>
-    <p>I led the creation of a completely new design system from scratch, built around our brand principles. Components, typography, colour, spacing, interaction patterns, and motion, all designed to be distinct from competitors and consistent across every tool in the platform.</p>
-    <p>The design system also solved an operational problem. Before it existed, there was no way to quickly build and test prototypes. The company had spent three years building a product that no one wanted because they had no mechanism to validate ideas before committing engineering time. The design system gave us the foundation to prototype, test, and validate at speed.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/Trial%20Dashboard.png" alt="New trial dashboard with design system">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Onboarding</p>
-    <h2>From "dumped into the tool" to guided value</h2>
-    <p>The old experience: sign up, answer a series of questions, land in the product with no dashboard, no guidance, no live data. Figure it out yourself or watch videos.</p>
-    <p>The new experience: during signup, users add their first business location. By the time they land in the product, live data is already populating. They immediately see value. The new dashboard presents a series of task cards, gamifying the setup process. Complete a task, get a celebratory moment. Connect your Google Business Profile, run your first report, each step earning a dopamine hit of progress.</p>
-    <p>The gamified approach solved two problems at once. It taught users how the platform worked without requiring them to watch videos or read documentation. And it got them to a moment of genuine value within minutes, not days.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/Signup%20Flow%20example.png" alt="Onboarding signup flow">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Simplifying complexity</p>
-    <h2>Three levels of data, one clear hierarchy</h2>
-    <p>BrightLocal's tools were drowning in data tables. Every feature presented everything at once, requiring users to wade through dense information to find what mattered. I introduced a three-tier information architecture approach, drawn from my experience designing data-heavy platforms in sports:</p>
-    <h3>Level one: the headline</h3>
-    <p>When you land on any tool, you see the key insight immediately. Here's a problem, here's what the data says, fix it. One clear action.</p>
-    <h3>Level two: the detail</h3>
-    <p>Click deeper and you get more context: what's driving the issue, how it compares over time, what the options are.</p>
-    <h3>Level three: the deep dive</h3>
-    <p>For power users who want to export CSVs, cross-reference data points, and run their own analysis.</p>
-    <p>This tiered approach meant a small business owner and a data-obsessed SEO agency could both use the same tool effectively, just at different depths.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/GBP%20Profile.png" alt="Google Business Profile tool with tiered data">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">AI features</p>
-    <h2>AI that turns data into direction</h2>
-    <p>As AI became the industry expectation, the pressure was to add it everywhere. My approach was different: AI should enhance the product experience, not add more bloat. We didn't want a ChatGPT box bolted on. We wanted AI embedded into the platform, working with user data to surface genuine value.</p>
-    <h3>AI Insights</h3>
-    <p>Analysed data at location level and surfaced what mattered as clear, prioritised actions. Instead of users manually running reports and interpreting complex SEO data, the dashboard told them: here's a broken citation, here's a trend in your traffic, with a single click to fix each one. It removed hours of analysis and gave users prioritised actions ranked by impact and ease.</p>
-    <h3>AI Review Response</h3>
-    <p>Small business owners often don't know what to write when replying to customer reviews, and slow responses to negative reviews can escalate quickly. The tool read incoming reviews, understood the business context, and either auto-responded or provided recommended response options the user could send with a single click. At enterprise level, managing hundreds of locations, this cut hours of work down to minutes.</p>
-    <h3>AI Visibility Optimisation</h3>
-    <p>Tracked presence in Google AI Overviews and ChatGPT, showing visibility, sentiment, and share of voice, plus clear actions to improve. Helping users show up when people search local SEO through AI tools.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/LSG.png" alt="AI-powered local search grid">
-  </div>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/Reputation%20Manager.png" alt="AI review response in Reputation Manager">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Team &amp; culture</p>
-    <h2>Fewer PMs, more designers</h2>
-    <p>When I joined, the UX team was two people: a part-time UX designer and a senior UX designer. They were servicing five product managers across five workstreams. Everything was bottlenecked through design.</p>
-    <p>I restructured the balance. As product managers left, we didn't replace them all, instead reducing PMs and significantly growing the design team. We went from 2 UX designers to 6, embedded in squads alongside engineering. Each squad had dedicated UX, UI, and visual design capability.</p>
-    <p>This shift changed the culture from engineering-led to design-led product development. Ideas were researched and validated through prototypes before reaching engineering. User testing became a standard part of every feature development cycle, not an afterthought.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/brightlocal/Team.png" alt="Design team growth">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Impact</p>
-    <h2>From stagnation to growth in six months</h2>
-    <p>The results were visible within the first six months of implementation.</p>
-    <p>Week-one retention jumped from 2% to 9%. For a platform with tens of thousands of free trial signups every week, that single metric represented a fundamental shift in how new users experienced the product.</p>
-    <p>NPS rose from 26 to 58. Existing users were happier, new users were staying, and the platform was earning trust rather than losing it.</p>
-    <p>Annual revenue grew from approximately &pound;10M to &pound;20M over the course of my tenure. Getting people onto the product, showing them value immediately, and converting them to subscribers was a direct result of the product design transformation.</p>
-    <p>BrightLocal had stagnated for two years before I joined. Within six months of the redesign, the company was growing again. The design system, the onboarding, the three-tier data approach, and the AI features didn't just improve the product. They gave the company a foundation to build and iterate faster than their competitors for the first time in years.</p>
-  </section>
-
-  <nav class="cs-nav">
-    <a href="nisba-brand.html">
-      <p class="dir">Previous case study</p>
-      <p class="title">Nisba Design Direction</p>
-    </a>
-    <a href="evolution.html">
-      <p class="dir">Next case study</p>
-      <p class="title">Evolution</p>
-    </a>
-  </nav>
-
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div>
-        <h3>Let's talk</h3>
-        <a href="mailto:rajib@studiodheet.com">rajib@studiodheet.com</a>
+    <section class="case-meta">
+      <div class="case-meta-item">
+        <h4>Role</h4>
+        <p>Creative Director<br>(Design Director)</p>
       </div>
-      <div class="footer-links">
-        <a href="index.html">Work</a>
-        <a href="https://www.linkedin.com/in/rajibmoazzam" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:rajib@studiodheet.com">Email</a>
+      <div class="case-meta-item">
+        <h4>Team</h4>
+        <p>Scaled from 4 to 16<br>(UX team 2 to 6)</p>
       </div>
-    </div>
-    <p class="footer-wordmark">rajib moazzam</p>
-  </footer>
+      <div class="case-meta-item">
+        <h4>Tools</h4>
+        <p>Figma, FigJam</p>
+      </div>
+      <div class="case-meta-item">
+        <h4>Duration</h4>
+        <p>2022 - 2025</p>
+      </div>
+      <div class="case-meta-item">
+        <h4>Status</h4>
+        <p>Live, all features<br>shipped and adopted</p>
+      </div>
+    </section>
 
+    <section class="case-results">
+      <div class="case-eyebrow"><span class="results-dot"></span> Results</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-metric">2x</div>
+          <h4>Annual revenue</h4>
+          <p>From ~£10M to ~£20M over the course of the product design transformation</p>
+        </div>
+        <div class="result-card">
+          <div class="result-metric">9%</div>
+          <h4>Week-one retention</h4>
+          <p>Up from 2%, a fundamental shift in how new users experienced the product</p>
+        </div>
+        <div class="result-card">
+          <div class="result-metric">28%</div>
+          <h4>Activation improvement</h4>
+          <p>From redesigned onboarding that showed users value within minutes, not days</p>
+        </div>
+        <div class="result-card">
+          <div class="result-metric">58</div>
+          <h4>NPS score</h4>
+          <p>Up from 26. Existing users happier, new users staying, trust earned not lost</p>
+        </div>
+      </div>
+    </section>
+
+    <figure class="case-figure">
+      <img src="https://images.squarespace-cdn.com/content/v1/664cdfb61a9b957f0d5a0d5d/1718021072636-0VM8CKVRAXMAD670XJ5O/Laptop-Mockup.png?format=2000w" alt="BrightLocal product on laptop">
+    </figure>
+
+    <!-- THE PROBLEM -->
+    <section class="case-section">
+      <div class="case-eyebrow">The problem</div>
+      <h2>Beautiful marketing, broken product</h2>
+      <p>When I joined BrightLocal as Creative Director, the company had stagnated. Revenue had plateaued at around £10M for two years. Tens of thousands of people were signing up for a free trial every week, but only around 2% came back on day two.</p>
+      <p>The product experience was the problem. The platform had been built over 10 years across three separate codebases stitched together by engineering. There was no onboarding flow, no home dashboard, no design system, and no product design principles. Users signed up, were dumped into the tool, and were expected to figure it out by watching 15-20 minute tutorial videos. Most didn't bother.</p>
+      <p>The disconnect between brand and product was making it worse. The marketing and website looked polished and modern. When users landed in the product, it looked like a completely different company. Users reported feeling misled, and that distrust was directly driving churn.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/Old%20product.png" alt="Old BrightLocal product">
+    </figure>
+
+    <!-- DISCOVERY -->
+    <section class="case-section">
+      <div class="case-eyebrow">Discovery</div>
+      <h2>Three groups, three very different stories</h2>
+      <p>Before designing anything, I needed to understand the full picture. I started by meeting every department head: CEO, CTO, CMO, Head of Sales, Customer Success. I mapped how the business worked, where the friction points were, and what each team believed was causing the stagnation.</p>
+      <p>Then I pushed the company to run their first ever customer survey, sent to tens of thousands of existing users. Alongside this, I set up three distinct focus groups through the customer success team: active users who were still paying, users who had subscribed but churned, and users who signed up for the free trial but never converted. We offered £50 Amazon vouchers for participation, and the insights from these three groups shaped every product design decision that followed.</p>
+      <h3>What the research told us</h3>
+      <p>Three findings emerged clearly across every research group.</p>
+      <p>First, the brand-to-product trust gap. Users consistently said that what they saw in marketing didn't match what they experienced in the product. The disconnect was so severe that it was actively damaging trust and driving people away before they even tried the tools.</p>
+      <p>Second, no guidance. Users were dumped into the product with no onboarding, no dashboard, no sense of where to start. If you need to study to use a tool, the tool isn't doing its job.</p>
+      <p>Third, no differentiation. I ran an exercise where I removed all logos from 15 competitor landing pages and asked BrightLocal employees to identify their own website. Most couldn't. The two competitors succeeding (SEMrush and Yext) had distinct brand and product presence. BrightLocal had neither.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/Discovery.png" alt="Discovery research">
+    </figure>
+
+    <!-- PRODUCT DESIGN STRATEGY -->
+    <section class="case-section">
+      <div class="case-eyebrow">Product design strategy</div>
+      <h2>Principles first, pixels second</h2>
+      <p>The first thing I did was establish product design principles. There were none. No North Star for quality, no shared definition of what good looked like, no alignment between brand values and product experience.</p>
+      <p>We defined principles together across brand and product: delight customers, make it intuitive (no one should need to read paragraphs or watch videos to use a feature), and be visually distinct from competitors. We likened BrightLocal to a skate brand meets local SEO company: independent, welcoming, a bit of an upstart, based in Brighton. That personality needed to show up in the product, not just the marketing.</p>
+      <p>Critically, we didn't design the brand identity separately and then adapt it for product. We built them cohesively. The design system, the illustration style, even the brand mascot that became a companion character inside the tool, all designed as one connected system from the start.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/Belief%20and%20Principles%20Icons.png" alt="Design beliefs and principles">
+    </figure>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/Visual%20Example.png" alt="Brand and product visual direction">
+    </figure>
+
+    <!-- DESIGN SYSTEM -->
+    <section class="case-section">
+      <div class="case-eyebrow">Design system</div>
+      <h2>One system to replace three codebases</h2>
+      <p>The old product was built on three separate platforms stitched together. Every time a new feature was added, it looked slightly different from the last because there was no shared component library. The visual inconsistency compounded over a decade of uncoordinated feature development.</p>
+      <p>I led the creation of a completely new design system from scratch, built around our brand principles. Components, typography, colour, spacing, interaction patterns, and motion, all designed to be distinct from competitors and consistent across every tool in the platform.</p>
+      <p>The design system also solved an operational problem. Before it existed, there was no way to quickly build and test prototypes. The company had spent three years building a product that no one wanted because they had no mechanism to validate ideas before committing engineering time. The design system gave us the foundation to prototype, test, and validate at speed.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/Trial%20Dashboard.png" alt="New trial dashboard with design system">
+    </figure>
+
+    <!-- ONBOARDING -->
+    <section class="case-section">
+      <div class="case-eyebrow">Onboarding</div>
+      <h2>From "dumped into the tool" to guided value</h2>
+      <p>The old experience: sign up, answer a series of questions, land in the product with no dashboard, no guidance, no live data. Figure it out yourself or watch videos.</p>
+      <p>The new experience: during signup, users add their first business location. By the time they land in the product, live data is already populating. They immediately see value. The new dashboard presents a series of task cards, gamifying the setup process. Complete a task, get a celebratory moment. Connect your Google Business Profile, run your first report, each step earning a dopamine hit of progress.</p>
+      <p>The gamified approach solved two problems at once. It taught users how the platform worked without requiring them to watch videos or read documentation. And it got them to a moment of genuine value within minutes, not days.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/Signup%20Flow%20example.png" alt="Onboarding signup flow">
+    </figure>
+
+    <!-- SIMPLIFYING COMPLEXITY -->
+    <section class="case-section">
+      <div class="case-eyebrow">Simplifying complexity</div>
+      <h2>Three levels of data, one clear hierarchy</h2>
+      <p>BrightLocal's tools were drowning in data tables. Every feature presented everything at once, requiring users to wade through dense information to find what mattered. I introduced a three-tier information architecture approach, drawn from my experience designing data-heavy platforms in sports:</p>
+      <h3>Level one: the headline</h3>
+      <p>When you land on any tool, you see the key insight immediately. Here's a problem, here's what the data says, fix it. One clear action.</p>
+      <h3>Level two: the detail</h3>
+      <p>Click deeper and you get more context: what's driving the issue, how it compares over time, what the options are.</p>
+      <h3>Level three: the deep dive</h3>
+      <p>For power users who want to export CSVs, cross-reference data points, and run their own analysis.</p>
+      <p>This tiered approach meant a small business owner and a data-obsessed SEO agency could both use the same tool effectively, just at different depths.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/GBP%20Profile.png" alt="Google Business Profile tool with tiered data">
+    </figure>
+
+    <!-- AI FEATURES -->
+    <section class="case-section">
+      <div class="case-eyebrow">AI features</div>
+      <h2>AI that turns data into direction</h2>
+      <p>As AI became the industry expectation, the pressure was to add it everywhere. My approach was different: AI should enhance the product experience, not add more bloat. We didn't want a ChatGPT box bolted on. We wanted AI embedded into the platform, working with user data to surface genuine value.</p>
+      <h3>AI Insights</h3>
+      <p>Analysed data at location level and surfaced what mattered as clear, prioritised actions. Instead of users manually running reports and interpreting complex SEO data, the dashboard told them: here's a broken citation, here's a trend in your traffic, with a single click to fix each one. It removed hours of analysis and gave users prioritised actions ranked by impact and ease.</p>
+      <h3>AI Review Response</h3>
+      <p>Small business owners often don't know what to write when replying to customer reviews, and slow responses to negative reviews can escalate quickly. The tool read incoming reviews, understood the business context, and either auto-responded or provided recommended response options the user could send with a single click. At enterprise level, managing hundreds of locations, this cut hours of work down to minutes.</p>
+      <h3>AI Visibility Optimisation</h3>
+      <p>Tracked presence in Google AI Overviews and ChatGPT, showing visibility, sentiment, and share of voice, plus clear actions to improve. Helping users show up when people search local SEO through AI tools.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/LSG.png" alt="AI-powered local search grid">
+    </figure>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/Reputation%20Manager.png" alt="AI review response in Reputation Manager">
+    </figure>
+
+    <!-- TEAM & CULTURE -->
+    <section class="case-section">
+      <div class="case-eyebrow">Team &amp; culture</div>
+      <h2>Fewer PMs, more designers</h2>
+      <p>When I joined, the UX team was two people: a part-time UX designer and a senior UX designer. They were servicing five product managers across five workstreams. Everything was bottlenecked through design.</p>
+      <p>I restructured the balance. As product managers left, we didn't replace them all, instead reducing PMs and significantly growing the design team. We went from 2 UX designers to 6, embedded in squads alongside engineering. Each squad had dedicated UX, UI, and visual design capability.</p>
+      <p>This shift changed the culture from engineering-led to design-led product development. Ideas were researched and validated through prototypes before reaching engineering. User testing became a standard part of every feature development cycle, not an afterthought.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/brightlocal/Team.png" alt="Design team growth">
+    </figure>
+
+    <!-- IMPACT -->
+    <section class="case-section">
+      <div class="case-eyebrow">Impact</div>
+      <h2>From stagnation to growth in six months</h2>
+      <p>The results were visible within the first six months of implementation.</p>
+      <p>Week-one retention jumped from 2% to 9%. For a platform with tens of thousands of free trial signups every week, that single metric represented a fundamental shift in how new users experienced the product.</p>
+      <p>NPS rose from 26 to 58. Existing users were happier, new users were staying, and the platform was earning trust rather than losing it.</p>
+      <p>Annual revenue grew from approximately £10M to £20M over the course of my tenure. Getting people onto the product, showing them value immediately, and converting them to subscribers was a direct result of the product design transformation.</p>
+      <p>BrightLocal had stagnated for two years before I joined. Within six months of the redesign, the company was growing again. The design system, the onboarding, the three-tier data approach, and the AI features didn't just improve the product. They gave the company a foundation to build and iterate faster than their competitors for the first time in years.</p>
+    </section>
+
+    <nav class="case-nav">
+      <a class="prev" href="nisba-brand.html">
+        <span class="prev-label">Previous case study</span>
+        Nisba Design Direction
+      </a>
+      <a class="next" href="amex.html">
+        <span class="next-label">Next case study</span>
+        American Express
+      </a>
+    </nav>
+
+  </main>
+
+  <script>
+    var burger = document.getElementById('navBurger');
+    var links = document.getElementById('navLinks');
+    burger.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { links.classList.remove('open'); });
+    });
+  </script>
 </body>
 </html>

@@ -3,210 +3,246 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A 0-to-1 product design case study for Nisba's halal investment screening tool. From discovery workshops with 10,000+ subscribers through to shipped product.">
   <title>Halal Screener | Rajib Moazzam</title>
+  <meta name="description" content="A 0-to-1 product design case study for Nisba's halal investment screening tool. From discovery workshops with 10,000+ subscribers through to shipped product.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <a class="wordmark" href="index.html">rajib moazzam.</a>
-    <nav class="site-nav">
+  <header class="nav">
+    <a href="index.html" class="nav-logo">rajib moazzam<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
       <a href="index.html">Work</a>
       <a href="https://www.linkedin.com/in/rajibmoazzam" target="_blank" rel="noopener">LinkedIn</a>
       <a href="mailto:rajib@studiodheet.com">Contact</a>
     </nav>
-    <a class="nav-cta" href="mailto:rajib@studiodheet.com">Get in touch</a>
+    <div class="nav-right">
+      <a href="mailto:rajib@studiodheet.com" class="pill">Get in touch <span class="star">&#10022;</span></a>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <div class="cs-hero">
-    <img src="images/halal-screener/Cover.png" alt="Nisba Halal Screener cover">
-  </div>
+  <main>
 
-  <section class="cs-title">
-    <p class="client">Nisba</p>
-    <h1>Halal Screener</h1>
-    <p class="standfirst">Designing a halal investment screening tool from scratch, helping Muslim investors quickly identify whether their index fund holdings are Sharia-compliant, without needing hours of manual research or a full training course.</p>
-  </section>
-
-  <div class="meta-strip">
-    <div><h4>Role</h4><p>Product Designer,<br>UX Researcher</p></div>
-    <div><h4>Key Collaborators</h4><p>Nisba Founders,<br>Development Team</p></div>
-    <div><h4>Tools</h4><p>Figma, FigJam,<br>Google Forms, Miro</p></div>
-    <div><h4>Project Timeline</h4><p>3 months</p></div>
-    <div><h4>Discovery &amp; Research</h4><p>Stakeholder workshops<br>User surveys (10,000+)<br>Usability testing (10 users)</p></div>
-  </div>
-
-  <section class="results">
-    <p class="label">Results</p>
-    <div class="results-grid">
-      <div class="result-card">
-        <p class="num">160</p>
-        <h4>Paying users in week one</h4>
-        <p>Sign-ups at $4.99/month before any promotion to the full 10,000+ subscriber list</p>
-      </div>
-      <div class="result-card">
-        <p class="num">32</p>
-        <h4>NPS score</h4>
-        <p>Measured two months after launch, placing the screener in the "strong" range for a new B2B product</p>
-      </div>
-      <div class="result-card">
-        <p class="num">76%</p>
-        <h4>Event-driven purchases</h4>
-        <p>Discovery research revealed in-person events drove the majority of conversions, reshaping Nisba's go-to-market</p>
-      </div>
+    <!-- Full-bleed hero image -->
+    <div class="case-hero">
+      <img src="images/halal-screener/Cover.png" alt="Nisba Halal Screener cover">
     </div>
-  </section>
 
-  <div class="cs-figure">
-    <img src="images/Tool-Dashboard.png" alt="Halal Screener tool dashboard">
-  </div>
+    <!-- Title block -->
+    <section class="case-intro">
+      <div class="case-eyebrow">Nisba</div>
+      <h1>Halal Screener</h1>
+      <p class="case-lede">Designing a halal investment screening tool from scratch, helping Muslim investors quickly identify whether their index fund holdings are Sharia-compliant, without needing hours of manual research or a full training course.</p>
+    </section>
 
-  <section class="cs-section">
-    <p class="label">The problem</p>
-    <h2>Most Muslim investors are screening in the dark</h2>
-    <p>Nisba is a halal investing education platform that teaches Muslims the fundamentals of Islamic finance. The problem was that after completing the training, users were left entirely on their own. They had the knowledge, but applying it meant manually researching hundreds of companies within index funds like the S&amp;P 500 to determine whether each one was Sharia-compliant. It was slow, complex, and most people simply didn't do it.</p>
-    <p>For those who couldn't afford the training course or didn't have the time, there was no entry point at all. They wanted to invest in line with their values but had no accessible way to check whether their money was going to compliant businesses.</p>
-    <p>Nisba wanted to change that. Rather than letting users bounce to other platforms after training, they wanted to build their own ecosystem. A tool that made halal screening fast, clear, and trustworthy, whether you'd completed the course or not.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Flow-chart.png" alt="User flow chart">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Discovery</p>
-    <h2>Starting with the audience, not the feature list</h2>
-    <p>The first phase was discovery. We ran workshops with the Nisba founders to unpack the business goals, user needs, and assumptions behind the idea. Together, we defined a clear problem statement, mapped early user personas, and explored the different journeys people might take when trying to understand whether their investments aligned with their values.</p>
-    <p>To validate our thinking, we sent a research questionnaire to Nisba's 10,000+ email subscribers. The goal was to understand where people were in their investment journey, the challenges they faced, and whether a screening tool would genuinely solve a meaningful problem.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Workshop.png" alt="Discovery workshop">
-  </div>
-
-  <section class="cs-section">
-    <h3>What the research told us</h3>
-    <p>Two findings shaped the entire product direction.</p>
-    <p>First, users overwhelmingly preferred to manage their finances on desktop, not mobile. This was counterintuitive: most people use Trading 212 on their phones. But the research showed that investment decisions were a sit-down activity, often done at home with a partner. One person would complete the training and then teach their spouse, and they'd work through their funds together. This meant we needed to design desktop-first, not mobile-first.</p>
-    <p>Second, we discovered that 76% of people who had purchased from Nisba had attended an in-person event first, despite events receiving minimal investment from the business. This insight reshaped Nisba's entire go-to-market approach beyond the screener.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Stats.png" alt="Research statistics">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Product strategy</p>
-    <h2>Defining what to build (and what not to)</h2>
-    <p>After discovery, we ran a feature prioritisation workshop with the Nisba team. We mapped every possible feature against user needs, technical feasibility, and time to launch. The core requirements were clear: the tool needed to integrate with the Trading 212 API so users could connect their existing accounts, screen index funds for halal and BDS compliance, and build Trading 212 pies directly from the platform.</p>
-    <p>We made a deliberate decision to start with just two index funds, the S&amp;P 500 and NASDAQ 100, rather than trying to cover everything. These were the funds Nisba's audience actually invested in. Depth over breadth.</p>
-    <p>We also chose to build a responsive web app rather than a native iOS app. The research showed desktop was the primary use case, but users still needed a functional mobile experience for quick checks.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Features.png" alt="Feature prioritisation">
-  </div>
-
-  <section class="cs-section">
-    <h3>AI that informs, not AI that decides</h3>
-    <p>One finding from the user survey shaped how we implemented AI in the product. Users were explicitly uncomfortable with AI making financial decisions on their behalf. They didn't want automated portfolio changes or algorithmic fund management. They wanted to stay fully in control of their money.</p>
-    <p>But they did want help. Manually tracking whether companies had changed their compliance status was one of the biggest pain points we heard in research. So we built AI into the screening layer: the tool uses AI to scan index funds against Shariah advisory data from firms like Amanie Advisors and Ratings Intelligence, flagging any changes in compliance status and alerting users when something in their portfolio shifts.</p>
-    <p>The distinction mattered. AI surfaces the information. The user makes the decision. In a space where trust is everything, that boundary between informing and acting was a deliberate design choice, not a technical limitation.</p>
-  </section>
-
-  <section class="cs-section">
-    <p class="label">Design process</p>
-    <h2>From flows to wireframes to tested prototypes</h2>
-    <p>The design process started with user flows, mapping the key journeys: sign-up, connecting a Trading 212 account, screening a fund, building a pie, and reviewing changes. From there, we moved into wireframes for the core screens, focusing on information hierarchy and layout before any visual design.</p>
-    <p>I built a mini design system alongside the wireframes and used Figma AI to generate interactive prototypes quickly. We then tested these prototypes with 10 users from Nisba's community, asking them to complete key tasks and flagging anywhere they got stuck.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Wireframes.png" alt="Wireframes for the screener">
-  </div>
-
-  <section class="cs-section">
-    <h3>What testing changed</h3>
-    <p>Two significant additions came directly from user testing.</p>
-    <p>The first was a search function. The S&amp;P 500 contains 500 companies. Users wanted to quickly check whether a specific company was halal-compliant, often because they'd seen something on social media or heard about a company in the news. Without search, they were scrolling through hundreds of cards. We added a search bar that let users find any company instantly.</p>
-    <p>The second was a change indicator. Users wanted to see at a glance whether anything had changed since their last login, so rather than reviewing every company in a fund manually, they could filter to see only updates. Companies change policies, global politics shift, compliance status evolves. The filter surfaced these changes immediately on login.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Dashboard-Compare.png" alt="Dashboard comparison view">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Visual design</p>
-    <h2>Building on trust</h2>
-    <p>The visual design for the screener extended the brand experience we had previously developed for Nisba's website. When Nisba first came to us, their platform didn't feel trustworthy for a financial education brand. As part of a separate project, we refined their visual identity to feel more credible and grown-up while keeping their existing logo and colour palette.</p>
-    <p>The screener inherited that visual foundation, colours, button styles, border treatments, spacing, with a few refinements. We removed serif fonts entirely and went with a purely sans-serif typographic system, better suited to a data-heavy product interface. The goal was that a user moving from the Nisba website into the screener would feel like they were in the same world, just deeper inside it.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Visual-Example.png" alt="Visual design system">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Key screens</p>
-    <h2>The sign-up flow</h2>
-    <p>One of the first problems we identified working with Nisba was their existing sign-up process. Previous products had a confusing double sign-up where users registered, landed in a locked platform, had to scroll down to subscribe, and then gained access. For the screener, we designed a clear, single sign-up flow that captured meaningful data, income levels, investment goals, and a brief biography, without adding friction. This gave Nisba long-term data points to understand who was using the tool and how they engaged over time.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Signup-Flow-example.png" alt="Sign-up flow">
-  </div>
-
-  <section class="cs-section">
-    <h3>The fund view on mobile</h3>
-    <p>One of the trickiest design challenges was the mobile company card. Each card needed to display the company name, stock market abbreviation, halal compliance status, BDS compliance status, and the ability to add or remove it from a pie. On desktop, space wasn't an issue. On mobile, fitting all of that information into a card without creating excessive scroll depth required careful hierarchy and restraint.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/Mobile-Experience.png" alt="Mobile experience">
-  </div>
-
-  <section class="cs-section">
-    <p class="label">Launch &amp; impact</p>
-    <h2>From screen to stage</h2>
-    <p>The Halal Screener launched at Halal Tech Fest, where we also designed event signage and a stand for Nisba to promote the new tool. This gave the product a physical presence alongside its digital launch, creating a moment that felt tangible and real for the community.</p>
-    <h3>Early results</h3>
-    <p>Within the first week of early access at $4.99/month, the screener had 160 sign-ups, before the product had been promoted to Nisba's full email list. Two months after launch, the product recorded an NPS score of 32, placing it in the strong range for a newly shipped B2B tool.</p>
-    <p>Most users are accessing the tool on desktop, validating the research finding that shaped the entire design direction. Users have already begun using the screener to identify and remove non-compliant funds from their Trading 212 pies.</p>
-    <p>The product hasn't had its full global launch yet. Nisba are running an early access period to gather feedback, identify bugs, and refine the experience before a broader release to their 10,000+ subscriber base.</p>
-    <p>Beyond the screener itself, the project has deepened the client relationship significantly. The Nisba founders have offered to provide a video testimonial and have referred me to other companies, a strong signal that the work delivered genuine value.</p>
-  </section>
-
-  <div class="cs-figure">
-    <img src="images/halal-screener/Header%20Image.png" alt="Final hero image">
-  </div>
-
-  <nav class="cs-nav">
-    <a href="evolution.html">
-      <p class="dir">Previous case study</p>
-      <p class="title">Evolution</p>
-    </a>
-    <a href="nisba-brand.html">
-      <p class="dir">Next case study</p>
-      <p class="title">Nisba Design Direction</p>
-    </a>
-  </nav>
-
-  <footer class="site-footer">
-    <div class="footer-top">
-      <div>
-        <h3>Let's talk</h3>
-        <a href="mailto:rajib@studiodheet.com">rajib@studiodheet.com</a>
+    <!-- Project metadata strip -->
+    <section class="case-meta">
+      <div class="case-meta-item">
+        <h4>Role</h4>
+        <p>Product Designer,<br>UX Researcher</p>
       </div>
-      <div class="footer-links">
-        <a href="index.html">Work</a>
-        <a href="https://www.linkedin.com/in/rajibmoazzam" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:rajib@studiodheet.com">Email</a>
+      <div class="case-meta-item">
+        <h4>Key Collaborators</h4>
+        <p>Nisba Founders,<br>Development Team</p>
       </div>
-    </div>
-    <p class="footer-wordmark">rajib moazzam</p>
-  </footer>
+      <div class="case-meta-item">
+        <h4>Tools</h4>
+        <p>Figma, FigJam,<br>Google Forms, Miro</p>
+      </div>
+      <div class="case-meta-item">
+        <h4>Project Timeline</h4>
+        <p>3 months</p>
+      </div>
+      <div class="case-meta-item">
+        <h4>Discovery &amp; Research</h4>
+        <p>Stakeholder workshops<br>User surveys (10,000+)<br>Usability testing (10 users)</p>
+      </div>
+    </section>
 
+    <!-- Results -->
+    <section class="case-results">
+      <div class="case-eyebrow"><span class="results-dot"></span> Results</div>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-metric">160</div>
+          <h4>Paying users in week one</h4>
+          <p>Sign-ups at $4.99/month before any promotion to the full 10,000+ subscriber list</p>
+        </div>
+        <div class="result-card">
+          <div class="result-metric">32</div>
+          <h4>NPS score</h4>
+          <p>Measured two months after launch, placing the screener in the "strong" range for a new B2B product</p>
+        </div>
+        <div class="result-card">
+          <div class="result-metric">76%</div>
+          <h4>Event-driven purchases</h4>
+          <p>Discovery research revealed in-person events drove the majority of conversions, reshaping Nisba's go-to-market</p>
+        </div>
+      </div>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Tool-Dashboard.png" alt="Halal Screener tool dashboard">
+    </figure>
+
+    <!-- THE PROBLEM -->
+    <section class="case-section">
+      <div class="case-eyebrow">The problem</div>
+      <h2>Most Muslim investors are screening in the dark</h2>
+      <p>Nisba is a halal investing education platform that teaches Muslims the fundamentals of Islamic finance. The problem was that after completing the training, users were left entirely on their own. They had the knowledge, but applying it meant manually researching hundreds of companies within index funds like the S&amp;P 500 to determine whether each one was Sharia-compliant. It was slow, complex, and most people simply didn't do it.</p>
+      <p>For those who couldn't afford the training course or didn't have the time, there was no entry point at all. They wanted to invest in line with their values but had no accessible way to check whether their money was going to compliant businesses.</p>
+      <p>Nisba wanted to change that. Rather than letting users bounce to other platforms after training, they wanted to build their own ecosystem. A tool that made halal screening fast, clear, and trustworthy, whether you'd completed the course or not.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Flow-chart.png" alt="User flow chart">
+    </figure>
+
+    <!-- DISCOVERY -->
+    <section class="case-section">
+      <div class="case-eyebrow">Discovery</div>
+      <h2>Starting with the audience, not the feature list</h2>
+      <p>The first phase was discovery. We ran workshops with the Nisba founders to unpack the business goals, user needs, and assumptions behind the idea. Together, we defined a clear problem statement, mapped early user personas, and explored the different journeys people might take when trying to understand whether their investments aligned with their values.</p>
+      <p>To validate our thinking, we sent a research questionnaire to Nisba's 10,000+ email subscribers. The goal was to understand where people were in their investment journey, the challenges they faced, and whether a screening tool would genuinely solve a meaningful problem.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Workshop.png" alt="Discovery workshop">
+    </figure>
+
+    <section class="case-section">
+      <h3>What the research told us</h3>
+      <p>Two findings shaped the entire product direction.</p>
+      <p>First, users overwhelmingly preferred to manage their finances on desktop, not mobile. This was counterintuitive: most people use Trading 212 on their phones. But the research showed that investment decisions were a sit-down activity, often done at home with a partner. One person would complete the training and then teach their spouse, and they'd work through their funds together. This meant we needed to design desktop-first, not mobile-first.</p>
+      <p>Second, we discovered that 76% of people who had purchased from Nisba had attended an in-person event first, despite events receiving minimal investment from the business. This insight reshaped Nisba's entire go-to-market approach beyond the screener.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Stats.png" alt="Research statistics">
+    </figure>
+
+    <!-- PRODUCT STRATEGY -->
+    <section class="case-section">
+      <div class="case-eyebrow">Product strategy</div>
+      <h2>Defining what to build (and what not to)</h2>
+      <p>After discovery, we ran a feature prioritisation workshop with the Nisba team. We mapped every possible feature against user needs, technical feasibility, and time to launch. The core requirements were clear: the tool needed to integrate with the Trading 212 API so users could connect their existing accounts, screen index funds for halal and BDS compliance, and build Trading 212 pies directly from the platform.</p>
+      <p>We made a deliberate decision to start with just two index funds, the S&amp;P 500 and NASDAQ 100, rather than trying to cover everything. These were the funds Nisba's audience actually invested in. Depth over breadth.</p>
+      <p>We also chose to build a responsive web app rather than a native iOS app. The research showed desktop was the primary use case, but users still needed a functional mobile experience for quick checks.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Features.png" alt="Feature prioritisation">
+    </figure>
+
+    <section class="case-section">
+      <h3>AI that informs, not AI that decides</h3>
+      <p>One finding from the user survey shaped how we implemented AI in the product. Users were explicitly uncomfortable with AI making financial decisions on their behalf. They didn't want automated portfolio changes or algorithmic fund management. They wanted to stay fully in control of their money.</p>
+      <p>But they did want help. Manually tracking whether companies had changed their compliance status was one of the biggest pain points we heard in research. So we built AI into the screening layer: the tool uses AI to scan index funds against Shariah advisory data from firms like Amanie Advisors and Ratings Intelligence, flagging any changes in compliance status and alerting users when something in their portfolio shifts.</p>
+      <p>The distinction mattered. AI surfaces the information. The user makes the decision. In a space where trust is everything, that boundary between informing and acting was a deliberate design choice, not a technical limitation.</p>
+    </section>
+
+    <!-- DESIGN PROCESS -->
+    <section class="case-section">
+      <div class="case-eyebrow">Design process</div>
+      <h2>From flows to wireframes to tested prototypes</h2>
+      <p>The design process started with user flows, mapping the key journeys: sign-up, connecting a Trading 212 account, screening a fund, building a pie, and reviewing changes. From there, we moved into wireframes for the core screens, focusing on information hierarchy and layout before any visual design.</p>
+      <p>I built a mini design system alongside the wireframes and used Figma AI to generate interactive prototypes quickly. We then tested these prototypes with 10 users from Nisba's community, asking them to complete key tasks and flagging anywhere they got stuck.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Wireframes.png" alt="Wireframes for the screener">
+    </figure>
+
+    <section class="case-section">
+      <h3>What testing changed</h3>
+      <p>Two significant additions came directly from user testing.</p>
+      <p>The first was a search function. The S&amp;P 500 contains 500 companies. Users wanted to quickly check whether a specific company was halal-compliant, often because they'd seen something on social media or heard about a company in the news. Without search, they were scrolling through hundreds of cards. We added a search bar that let users find any company instantly.</p>
+      <p>The second was a change indicator. Users wanted to see at a glance whether anything had changed since their last login, so rather than reviewing every company in a fund manually, they could filter to see only updates. Companies change policies, global politics shift, compliance status evolves. The filter surfaced these changes immediately on login.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Dashboard-Compare.png" alt="Dashboard comparison view">
+    </figure>
+
+    <!-- VISUAL DESIGN -->
+    <section class="case-section">
+      <div class="case-eyebrow">Visual design</div>
+      <h2>Building on trust</h2>
+      <p>The visual design for the screener extended the brand experience we had previously developed for Nisba's website. When Nisba first came to us, their platform didn't feel trustworthy for a financial education brand. As part of a separate project, we refined their visual identity to feel more credible and grown-up while keeping their existing logo and colour palette.</p>
+      <p>The screener inherited that visual foundation, colours, button styles, border treatments, spacing, with a few refinements. We removed serif fonts entirely and went with a purely sans-serif typographic system, better suited to a data-heavy product interface. The goal was that a user moving from the Nisba website into the screener would feel like they were in the same world, just deeper inside it.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Visual-Example.png" alt="Visual design system">
+    </figure>
+
+    <!-- KEY SCREENS -->
+    <section class="case-section">
+      <div class="case-eyebrow">Key screens</div>
+      <h2>The sign-up flow</h2>
+      <p>One of the first problems we identified working with Nisba was their existing sign-up process. Previous products had a confusing double sign-up where users registered, landed in a locked platform, had to scroll down to subscribe, and then gained access. For the screener, we designed a clear, single sign-up flow that captured meaningful data, income levels, investment goals, and a brief biography, without adding friction. This gave Nisba long-term data points to understand who was using the tool and how they engaged over time.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Signup-Flow-example.png" alt="Sign-up flow">
+    </figure>
+
+    <section class="case-section">
+      <h3>The fund view on mobile</h3>
+      <p>One of the trickiest design challenges was the mobile company card. Each card needed to display the company name, stock market abbreviation, halal compliance status, BDS compliance status, and the ability to add or remove it from a pie. On desktop, space wasn't an issue. On mobile, fitting all of that information into a card without creating excessive scroll depth required careful hierarchy and restraint.</p>
+    </section>
+
+    <figure class="case-figure">
+      <img src="images/Mobile-Experience.png" alt="Mobile experience">
+    </figure>
+
+    <!-- LAUNCH & IMPACT -->
+    <section class="case-section">
+      <div class="case-eyebrow">Launch &amp; impact</div>
+      <h2>From screen to stage</h2>
+      <p>The Halal Screener launched at Halal Tech Fest, where we also designed event signage and a stand for Nisba to promote the new tool. This gave the product a physical presence alongside its digital launch, creating a moment that felt tangible and real for the community.</p>
+      <h3>Early results</h3>
+      <p>Within the first week of early access at $4.99/month, the screener had 160 sign-ups, before the product had been promoted to Nisba's full email list. Two months after launch, the product recorded an NPS score of 32, placing it in the strong range for a newly shipped B2B tool.</p>
+      <p>Most users are accessing the tool on desktop, validating the research finding that shaped the entire design direction. Users have already begun using the screener to identify and remove non-compliant funds from their Trading 212 pies.</p>
+      <p>The product hasn't had its full global launch yet. Nisba are running an early access period to gather feedback, identify bugs, and refine the experience before a broader release to their 10,000+ subscriber base.</p>
+      <p>Beyond the screener itself, the project has deepened the client relationship significantly. The Nisba founders have offered to provide a video testimonial and have referred Studio Dheet to other companies, a strong signal that the work delivered genuine value.</p>
+    </section>
+
+    <figure class="case-figure bleed">
+      <img src="images/halal-screener/Header%20Image.png" alt="Final hero image">
+    </figure>
+
+    <!-- Previous / Next navigation -->
+    <nav class="case-nav">
+      <a class="prev" href="index.html">
+        <span class="prev-label">All work</span>
+        Back to portfolio
+      </a>
+      <a class="next" href="nisba-brand.html">
+        <span class="next-label">Next case study</span>
+        Nisba Design Direction
+      </a>
+    </nav>
+
+  </main>
+
+  <script>
+    var burger = document.getElementById('navBurger');
+    var links = document.getElementById('navLinks');
+    burger.addEventListener('click', function () {
+      var open = links.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open);
+    });
+    links.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { links.classList.remove('open'); });
+    });
+  </script>
 </body>
 </html>
