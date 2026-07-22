@@ -486,3 +486,38 @@ a { color: var(--black); }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+/* ---- Wix-style side gutters (matches Studio Dheet case-studies layout) ---- */
+:root { --page-gutter: clamp(24px, 6vw, 120px); }
+
+.hero,
+.outro,
+.project,
+.case-meta,
+.case-results,
+.case-nav,
+.case-intro,
+.case-section,
+.case-figure {
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
+}
+
+.case-figure.bleed {
+  width: auto;
+  margin-left: 0;
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
+}
+.case-figure.bleed img { border-radius: 12px; }
+
+.case-hero {
+  width: auto;
+  margin-left: 0;
+  padding: 0 var(--page-gutter);
+}
+.case-hero img { border-radius: 12px; }
+
+.carousel {
+  padding-left: var(--page-gutter) !important;
+}
