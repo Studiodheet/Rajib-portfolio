@@ -648,26 +648,28 @@ footer {
 
 /* ============ DANTASE-STYLE PERSONAL HERO ============ */
 .ph-hero {
-  padding: clamp(64px, 10vw, 140px) var(--pad) clamp(64px, 9vw, 120px);
   max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(72px, 10vw, 150px) var(--pad) clamp(64px, 9vw, 120px);
 }
 .ph-headline {
   font-family: 'Denton', 'Cormorant Garamond', Georgia, serif;
   font-weight: 300;
-  font-size: clamp(3rem, 8.5vw, 7.25rem);
-  line-height: 1.04;
-  letter-spacing: -0.015em;
+  font-size: clamp(2.75rem, 6.5vw, 5.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
   margin: 0 0 clamp(64px, 8vw, 120px);
+  max-width: 12ch;
 }
 .ph-headline em {
   font-style: italic;
   font-weight: 300;
 }
 .ph-body {
-  max-width: 640px;
-  margin-left: auto;
-  font-size: 19px;
-  line-height: 1.6;
+  max-width: 560px;
+  margin-left: clamp(0px, 28vw, 340px);
+  font-size: 18px;
+  line-height: 1.65;
 }
 .ph-body p { margin: 0 0 20px; }
 .ph-email a {
@@ -679,5 +681,6 @@ footer {
 }
 @media (max-width: 700px) {
   .ph-headline br { display: none; }
+  .ph-headline { max-width: none; }
   .ph-body { margin-left: 0; }
 }
