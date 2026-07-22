@@ -650,7 +650,7 @@ footer {
 .ph-hero {
   max-width: 1180px;
   margin: 0 auto;
-  padding: clamp(72px, 10vw, 150px) var(--pad) clamp(64px, 9vw, 120px);
+  padding: clamp(120px, 16vw, 240px) var(--pad) clamp(64px, 9vw, 120px);
 }
 .ph-headline {
   font-family: 'Denton', 'Cormorant Garamond', Georgia, serif;
@@ -659,7 +659,7 @@ footer {
   line-height: 1.06;
   letter-spacing: -0.01em;
   margin: 0 0 clamp(64px, 8vw, 120px);
-  max-width: 12ch;
+  max-width: none;
 }
 .ph-headline em {
   font-style: italic;
