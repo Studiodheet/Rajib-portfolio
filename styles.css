@@ -522,18 +522,23 @@ a { color: var(--black); }
   padding-left: var(--page-gutter) !important;
 }
 
-/* Carousel: gutter on left, bleed off the right edge like Studio Dheet */
-.carousel {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding-right: 0 !important;
-}
 
-/* Carousel final: first image aligns with the project label, bleeds right */
-.carousel {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  padding: 4px 0 4px var(--page-gutter) !important;
+
+
+/* ============ CAROUSEL FINAL ============ */
+.carousel,
+.project .carousel {
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: 0 !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  padding-right: 0 !important;
+  padding-left: var(--page-gutter, 48px) !important;
+  box-sizing: border-box !important;
 }
-.carousel::before { display: none; }
-.carousel::after { display: none; }
+.carousel::before,
+.carousel::after {
+  display: none !important;
+  content: none !important;
+}
