@@ -667,7 +667,7 @@ footer {
 }
 .ph-body {
   max-width: 560px;
-  margin-left: clamp(0px, 28vw, 340px);
+  margin-left: 240px;
   font-size: 18px;
   line-height: 1.65;
 }
