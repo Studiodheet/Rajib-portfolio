@@ -410,6 +410,22 @@ footer {
 }
 .case-figure.bleed img { border-radius: 0; }
 
+.case-gallery {
+  max-width: 1280px;
+  margin: 0 auto 64px;
+  padding: 0 48px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.case-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
 .case-section {
   max-width: 720px;
   margin: 0 auto;
@@ -478,6 +494,7 @@ footer {
 @media (max-width: 800px) {
   .case-intro { padding: 64px 24px 48px; }
   .case-figure { padding: 0 24px; margin-bottom: 48px; }
+  .case-gallery { padding: 0 24px; gap: 16px; }
   .case-section { padding: 24px 24px 48px; }
   .case-section p,
   .case-section h3 { font-size: 18px; line-height: 28px; }
@@ -621,7 +638,8 @@ footer {
   padding-right: var(--page-gutter);
 }
 
-.case-figure {
+.case-figure,
+.case-gallery {
   padding-left: var(--page-gutter);
   padding-right: var(--page-gutter);
 }
