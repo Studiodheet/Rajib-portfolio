@@ -426,6 +426,22 @@ footer {
   border-radius: 12px;
 }
 
+.case-phones {
+  max-width: 1280px;
+  margin: 0 auto 64px;
+  padding: 0 48px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.case-phones img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
 .case-section {
   max-width: 720px;
   margin: 0 auto;
@@ -495,6 +511,8 @@ footer {
   .case-intro { padding: 64px 24px 48px; }
   .case-figure { padding: 0 24px; margin-bottom: 48px; }
   .case-gallery { padding: 0 24px; gap: 16px; }
+  .case-phones { flex-wrap: wrap; padding: 0 24px; gap: 16px; }
+  .case-phones img { max-width: 220px; }
   .case-section { padding: 24px 24px 48px; }
   .case-section p,
   .case-section h3 { font-size: 18px; line-height: 28px; }
@@ -639,7 +657,8 @@ footer {
 }
 
 .case-figure,
-.case-gallery {
+.case-gallery,
+.case-phones {
   padding-left: var(--page-gutter);
   padding-right: var(--page-gutter);
 }
